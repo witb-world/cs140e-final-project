@@ -12,7 +12,7 @@ PROGS := $(wildcard tests/*test.c)
 
 LIBS += ./libgcc.a
 
-COMMON_SRC := nrf-hw-support.c nrf-public.c nrf-driver.c
+COMMON_SRC := nrf-hw-support.c nrf-public.c nrf-driver.c esp-helpers.c
 
 STAFF_OBJS := $(CS140E_2023_PATH)/libpi/staff-objs/new-spi.o
 # STAFF_OBJS += staff-nrf-driver.o
