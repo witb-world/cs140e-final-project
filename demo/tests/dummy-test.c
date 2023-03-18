@@ -4,6 +4,7 @@
 #include "nrf-hw-support.h"
 #include "esp-helpers.h"
 
+#define BUF_SIZE 1024
 enum {GET_MAC_ADDRESS = 0x65,
 GET_WIFI_MODE = 0x67};
 
@@ -15,24 +16,24 @@ void notmain(void) {
 
   // TODO: create buf for TLV structure, use `compose_tlv` helper to build
   //
-  char buf[1024];
-  char res[1024];
+  char buf[BUF_SIZE];
+  char res[BUF_SIZE];
   memset(buf, 0, sizeof(buf));
   memset(res, 0, sizeof(res));
-  compose_tlv(buf, &mac, 1);
+  compose_tlv(buf, &mac, 2);
   printk("Composed TLV\n");
   printk("-----Current TLV buffer----\n");
   for (int i = 0; i < sizeof(buf) / sizeof(uint32_t); i++) {
     printk("%x", buf[i*4]);
   }
   printk("\n---------------------------\n");
-  while (1) {
-    spi_n_transfer(spi_if, &mac, res, 4);
-    if (*res != 0) {
-      printk("Got response: \n");
-      break;
-    }
-  }
+  spi_n_transfer(spi_if, res, buf, BUF_SIZE);
+  // while (1) {
+  //   if (*res != 0) {
+  //     printk("Got response: \n");
+  //     break;
+  //   }
+  // }
   for (int i = 0; i < sizeof(res) / sizeof(uint32_t); i++) {
     printk("%x", res[i*4]);
   }
