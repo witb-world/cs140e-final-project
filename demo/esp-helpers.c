@@ -39,3 +39,21 @@ uint16_t compose_tlv(uint8_t* buf, uint8_t* data, uint16_t data_length)
 	count = count + data_length;
 	return count;
 }
+
+// ctrl_cmd_t * ctrl_wait_and_parse_sync_resp(ctrl_cmd_t *app_req)
+// {
+//   ctrl_cmd_t * rx_buf = NULL;
+//   int rx_buf_len = 0;
+// 
+//   rx_buf = get_response(&rx_buf_len, app_req->cmd_timeout_sec);
+//   if (!rx_buf || !rx_buf_len) {
+//     printf("Response not received\n");
+//     if (rx_buf) {
+//       mem_free(rx_buf);
+// 
+//     }
+// 
+//   }
+//   return rx_buf;
+// 
+// }
