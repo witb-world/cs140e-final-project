@@ -8,13 +8,15 @@
 # # PROGS := $(wildcard tests/[0123]-*.c)
 # PROGS := $(wildcard tests/[1234]-*.c)
 # PROGS += $(wildcard tests/5-*.c)
-PROGS := $(wildcard tests/*test.c)
+PROGS := $(wildcard tests/uart-test.c)
 
 LIBS += ./libgcc.a
 
-COMMON_SRC := nrf-hw-support.c nrf-public.c nrf-driver.c esp-helpers.c
+COMMON_SRC := nrf-hw-support.c nrf-public.c nrf-driver.c esp-helpers.c 
+# COMMON_SRC += sw-uart.c sw-uart-veneer.c
 
-STAFF_OBJS := $(CS140E_2023_PATH)/libpi/staff-objs/new-spi.o
+STAFF_OBJS += $(CS140E_2023_PATH)/libpi/staff-objs/new-spi.o 
+STAFF_OBJS += $(CS140E_2023_PATH)/libpi/staff-objs/sw-uart.o
 # STAFF_OBJS += staff-nrf-driver.o
 
 

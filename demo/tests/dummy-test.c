@@ -4,15 +4,20 @@
 #include "nrf-hw-support.h"
 #include "esp-helpers.h"
 
-#define BUF_SIZE 1024
-enum {GET_MAC_ADDRESS = 0x65,
-GET_WIFI_MODE = 0x67};
+#define BUF_SIZE 1024 
+enum {
+  GET_MAC_ADDRESS = 0x65,
+  GET_WIFI_MODE = 0x67,
+  GET_PS_MODE = 0x73
+};
 
 void notmain(void) {
   spi_t spi_if = pin_init(8, 0);
+  gpio_set_on(8);
 
   uint8_t mac = GET_MAC_ADDRESS;
   uint8_t w_mode = GET_WIFI_MODE;
+  uint8_t ps_mode = GET_PS_MODE;
 
   // TODO: create buf for TLV structure, use `compose_tlv` helper to build
   //
@@ -20,7 +25,7 @@ void notmain(void) {
   char res[BUF_SIZE];
   memset(buf, 0, sizeof(buf));
   memset(res, 0, sizeof(res));
-  compose_tlv(buf, &mac, 2);
+  compose_tlv(buf, &mac, 16);
   printk("Composed TLV\n");
   printk("-----Current TLV buffer----\n");
   for (int i = 0; i < sizeof(buf) / sizeof(uint32_t); i++) {
@@ -28,6 +33,7 @@ void notmain(void) {
   }
   printk("\n---------------------------\n");
   spi_n_transfer(spi_if, res, buf, BUF_SIZE);
+  delay_us(10000);
   // while (1) {
   //   if (*res != 0) {
   //     printk("Got response: \n");
