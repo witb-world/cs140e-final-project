@@ -8,7 +8,7 @@
 # # PROGS := $(wildcard tests/[0123]-*.c)
 # PROGS := $(wildcard tests/[1234]-*.c)
 # PROGS += $(wildcard tests/5-*.c)
-PROGS := $(wildcard tests/uart-test.c)
+PROGS := $(wildcard tests/uart-test*.c)
 
 LIBS += ./libgcc.a
 
