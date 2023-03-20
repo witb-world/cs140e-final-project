@@ -1,0 +1,23 @@
+*~
+*.bak
+*.staff
+*-staff
+*.swp
+*.swo
+staff-*.txt
+staff-*.c
+.gdb_history
+# everything below for private repo
+*.o
+*.list
+*.elf
+*.d
+*.bin
+*.out
+*/tags
+tags
+.vscode*
+*.fake
+*.a
+*.test
+*.txt
