@@ -1,0 +1,1054 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ABORT_MODE	libpi/include/rpi-constants.h	/^#define ABORT_MODE /;"	d
+AR	libpi/defs.mk	/^AR = $(ARM)-ar$/;"	m
+ARM	libpi/defs.mk	/^ARM = arm-none-eabi$/;"	m
+AS	libpi/defs.mk	/^AS  = $(ARM)-as$/;"	m
+AT	demo/atlib.h	/^#define AT /;"	d
+AT	demo/tests/uart-test-wifi-connect.c	/^#define AT /;"	d	file:
+AT	demo/tests/uart-test.c	/^#define  AT /;"	d	file:
+AT_GMR	demo/atlib.h	/^#define AT_GMR /;"	d
+AT_GMR	demo/tests/uart-test-wifi-connect.c	/^#define AT_GMR /;"	d	file:
+AT_GMR	demo/tests/uart-test.c	/^#define  AT_GMR /;"	d	file:
+AUX_ENB	libpi/src/uart.c	/^  AUX_ENB = 0x20215004,$/;"	e	enum:__anon32	file:
+AUX_MU_BAUD	libpi/src/uart.c	/^  AUX_MU_BAUD     = 0x20215068,$/;"	e	enum:__anon32	file:
+AUX_MU_CNTL_REG	libpi/src/uart.c	/^  AUX_MU_CNTL_REG = 0x20215060,$/;"	e	enum:__anon32	file:
+AUX_MU_IER_REG	libpi/src/uart.c	/^  AUX_MU_IER_REG = 0x20215044,$/;"	e	enum:__anon32	file:
+AUX_MU_IIR_REG	libpi/src/uart.c	/^  AUX_MU_IIR_REG = 0x20215048,$/;"	e	enum:__anon32	file:
+AUX_MU_IO_REG	libpi/src/uart.c	/^  AUX_MU_IO_REG = 0x20215040,$/;"	e	enum:__anon32	file:
+AUX_MU_LCR_REG	libpi/src/uart.c	/^  AUX_MU_LCR_REG = 0x2021504c,$/;"	e	enum:__anon32	file:
+AUX_MU_LSR_REG	libpi/src/uart.c	/^  AUX_MU_LSR_REG = 0x20215054,$/;"	e	enum:__anon32	file:
+AUX_MU_STAT_REG	libpi/src/uart.c	/^  AUX_MU_STAT_REG = 0x20215064,$/;"	e	enum:__anon32	file:
+AssertNow	libpi/libc/demand.h	/^#define AssertNow(/;"	d
+BOOTLOADER	demo/Makefile	/^BOOTLOADER = my-install$/;"	m
+BRANCHTO	libpi/staff-start.S	/^BRANCHTO:$/;"	l
+BREAK_0	libpi/libc/random.c	/^#define	BREAK_0	/;"	d	file:
+BREAK_1	libpi/libc/random.c	/^#define	BREAK_1	/;"	d	file:
+BREAK_2	libpi/libc/random.c	/^#define	BREAK_2	/;"	d	file:
+BREAK_3	libpi/libc/random.c	/^#define	BREAK_3	/;"	d	file:
+BREAK_4	libpi/libc/random.c	/^#define	BREAK_4	/;"	d	file:
+BUF_SIZE	demo/atlib.h	/^#define BUF_SIZE /;"	d
+BUF_SIZE	demo/tests/dummy-test.c	/^#define BUF_SIZE /;"	d	file:
+BUF_SIZE	demo/tests/uart-test-lib.c	/^#define BUF_SIZE /;"	d	file:
+BUF_SIZE	demo/tests/uart-test-wifi-connect.c	/^#define BUF_SIZE /;"	d	file:
+BUF_SIZE	demo/tests/uart-test.c	/^#define BUF_SIZE /;"	d	file:
+BUILD_DIR	libpi/manifest.mk	/^BUILD_DIR := .\/objs$/;"	m
+CC	libpi/defs.mk	/^CC = $(ARM)-gcc$/;"	m
+CLR	libpi/include/rpi-asm.h	/^#define CLR(/;"	d
+COMMON_SRC	demo/Makefile	/^COMMON_SRC := esp-helpers.c $/;"	m
+CPP_ASFLAGS	libpi/defs.mk	/^CPP_ASFLAGS =  -nostdlib -nostartfiles -ffreestanding   -Wa,--warn -Wa,--fatal-warnings -Wa,-mcpu=arm1176jzf-s -Wa,-march=armv6zk   $(INC)$/;"	m
+CQ_N	libpi/libc/circular.h	/^#   define CQ_N /;"	d
+CS140E_2023_LIBPI_PATH	libpi/defs.mk	/^CS140E_2023_LIBPI_PATH = $(CS140E_2023_PATH)\/libpi$/;"	m
+CTRL_EP_NAME_RESP	demo/esp-helpers.c	/^#define CTRL_EP_NAME_RESP /;"	d	file:
+CTRL_EP_NAME_RESP	demo/esp-helpers.h	/^#define CTRL_EP_NAME_RESP /;"	d
+CWLAP	demo/tests/uart-test.c	/^#define CWLAP /;"	d	file:
+CYC_PER_USEC	libpi/include/rpi-constants.h	/^#define CYC_PER_USEC /;"	d
+DEG_0	libpi/libc/random.c	/^#define	DEG_0	/;"	d	file:
+DEG_1	libpi/libc/random.c	/^#define	DEG_1	/;"	d	file:
+DEG_2	libpi/libc/random.c	/^#define	DEG_2	/;"	d	file:
+DEG_3	libpi/libc/random.c	/^#define	DEG_3	/;"	d	file:
+DEG_4	libpi/libc/random.c	/^#define	DEG_4	/;"	d	file:
+DEV_VAL32	libpi/include/rpi.h	/^    static inline uint32_t DEV_VAL32(uint32_t x) { return x; }$/;"	f
+Disable_Basic_IRQs	libpi/include/rpi-interrupts.h	/^    Disable_Basic_IRQs  = IRQ_Base+0x24,    \/\/ 0x224$/;"	e	enum:__anon21
+Disable_IRQs_1	libpi/include/rpi-interrupts.h	/^    Disable_IRQs_1      = IRQ_Base+0x1c,    \/\/ 0x21c$/;"	e	enum:__anon21
+Disable_IRQs_2	libpi/include/rpi-interrupts.h	/^    Disable_IRQs_2      = IRQ_Base+0x20,    \/\/ 0x220$/;"	e	enum:__anon21
+ESP_DEBUG	libesp/esp-lex.h	/^#define ESP_DEBUG$/;"	d
+ESP_DEFAULT_PORT	libesp/esp-constants.h	/^#define ESP_DEFAULT_PORT /;"	d
+ESP_MAX_CONN	libesp/esp-constants.h	/^#define ESP_MAX_CONN /;"	d
+ESP_MAX_PKT	libesp/esp-constants.h	/^#define ESP_MAX_PKT /;"	d
+ESP_SERVER_IP	libesp/esp-constants.h	/^#define ESP_SERVER_IP /;"	d
+ESP_TCP	libesp/libesp.h	/^    enum { ESP_TCP = 13, ESP_UDP } type;$/;"	e	enum:esp_conn::__anon33
+ESP_UDP	libesp/libesp.h	/^    enum { ESP_TCP = 13, ESP_UDP } type;$/;"	e	enum:esp_conn::__anon33
+EXCLUDE	demo/Makefile	/^EXCLUDE ?= grep -v simple_boot$/;"	m
+Enable_Basic_IRQs	libpi/include/rpi-interrupts.h	/^    Enable_Basic_IRQs   = IRQ_Base+0x18,    \/\/ 0x218$/;"	e	enum:__anon21
+Enable_IRQs_1	libpi/include/rpi-interrupts.h	/^    Enable_IRQs_1       = IRQ_Base+0x10,    \/\/ 0x210$/;"	e	enum:__anon21
+Enable_IRQs_2	libpi/include/rpi-interrupts.h	/^    Enable_IRQs_2       = IRQ_Base+0x14,    \/\/ 0x214$/;"	e	enum:__anon21
+FIQ_MODE	libpi/include/rpi-constants.h	/^#define FIQ_MODE /;"	d
+FIQ_control	libpi/include/rpi-interrupts.h	/^    FIQ_control         = IRQ_Base+0xc,     \/\/ 0x20c$/;"	e	enum:__anon21
+FLUSH_RX	demo/nrf-hw-support.h	/^    FLUSH_RX                = 0b11100010,$/;"	e	enum:__anon4
+FLUSH_TX	demo/nrf-hw-support.h	/^    FLUSH_TX                = 0b11100001,$/;"	e	enum:__anon4
+FREE_MB	libpi/include/rpi-constants.h	/^#define FREE_MB /;"	d
+GET32	libpi/staff-start.S	/^GET32:$/;"	l
+GET8	libpi/staff-src/put-get.S	/^GET8:$/;"	l
+GET_IP	demo/tests/uart-test-wifi-connect.c	/^#define GET_IP /;"	d	file:
+GET_MAC_ADDRESS	demo/tests/dummy-test.c	/^  GET_MAC_ADDRESS = 0x65,$/;"	e	enum:__anon6	file:
+GET_PS_MODE	demo/tests/dummy-test.c	/^  GET_PS_MODE = 0x73$/;"	e	enum:__anon6	file:
+GET_WIFI_MODE	demo/tests/dummy-test.c	/^  GET_WIFI_MODE = 0x67,$/;"	e	enum:__anon6	file:
+GET_WIFI_MODE	demo/tests/uart-test-wifi-connect.c	/^#define GET_WIFI_MODE /;"	d	file:
+GET_WIFI_MODE	demo/tests/uart-test.c	/^#define GET_WIFI_MODE /;"	d	file:
+GPIO_BASE	libpi/src/gpio.c	/^    GPIO_BASE = 0x20200000,$/;"	e	enum:__anon31	file:
+GPIO_FUNC_ALT0	libpi/include/gpio.h	/^    GPIO_FUNC_ALT0    = 4,$/;"	e	enum:__anon24
+GPIO_FUNC_ALT1	libpi/include/gpio.h	/^    GPIO_FUNC_ALT1    = 5,$/;"	e	enum:__anon24
+GPIO_FUNC_ALT2	libpi/include/gpio.h	/^    GPIO_FUNC_ALT2    = 6,$/;"	e	enum:__anon24
+GPIO_FUNC_ALT3	libpi/include/gpio.h	/^    GPIO_FUNC_ALT3    = 7,$/;"	e	enum:__anon24
+GPIO_FUNC_ALT4	libpi/include/gpio.h	/^    GPIO_FUNC_ALT4    = 3,$/;"	e	enum:__anon24
+GPIO_FUNC_ALT5	libpi/include/gpio.h	/^    GPIO_FUNC_ALT5    = 2,$/;"	e	enum:__anon24
+GPIO_FUNC_INPUT	libpi/include/gpio.h	/^    GPIO_FUNC_INPUT   = 0,$/;"	e	enum:__anon24
+GPIO_FUNC_OUTPUT	libpi/include/gpio.h	/^    GPIO_FUNC_OUTPUT  = 1,$/;"	e	enum:__anon24
+GPIO_INT0	libpi/include/gpio.h	/^enum { GPIO_INT0 = 49, GPIO_INT1, GPIO_INT2, GPIO_INT3 };$/;"	e	enum:__anon25
+GPIO_INT1	libpi/include/gpio.h	/^enum { GPIO_INT0 = 49, GPIO_INT1, GPIO_INT2, GPIO_INT3 };$/;"	e	enum:__anon25
+GPIO_INT2	libpi/include/gpio.h	/^enum { GPIO_INT0 = 49, GPIO_INT1, GPIO_INT2, GPIO_INT3 };$/;"	e	enum:__anon25
+GPIO_INT3	libpi/include/gpio.h	/^enum { GPIO_INT0 = 49, GPIO_INT1, GPIO_INT2, GPIO_INT3 };$/;"	e	enum:__anon25
+GPIO_READ_RAW	libpi/include/cycle-util.h	/^    static inline unsigned GPIO_READ_RAW(unsigned pin) {$/;"	f
+GPIO_RX	libpi/include/gpio.h	/^#define GPIO_RX /;"	d
+GPIO_TX	libpi/include/gpio.h	/^#define GPIO_TX /;"	d
+GREP_STR	libpi/manifest.mk	/^GREP_STR := 'HASH:\\|ERROR:\\|PANIC:\\|PASS:\\|TEST:'$/;"	m
+HIGHEST_USED_ADDR	libpi/include/rpi-constants.h	/^#define HIGHEST_USED_ADDR /;"	d
+INC	libpi/defs.mk	/^INC ?= -I$(LPP)\/include -I$(LPP)\/ -I$(LPP)\/src -I. -I$(LPP)\/staff-private -I$(LPP)\/libc$/;"	m
+INT_STACK_ADDR	libpi/include/rpi-constants.h	/^#define INT_STACK_ADDR /;"	d
+INT_STACK_ADDR2	libpi/include/rpi-constants.h	/^#define INT_STACK_ADDR2 /;"	d
+INT_UNHANDLED	libpi/include/rpi-interrupts.h	/^#define INT_UNHANDLED(/;"	d
+IRQ_Base	libpi/include/rpi-interrupts.h	/^    IRQ_Base            = 0x2000b200,$/;"	e	enum:__anon21
+IRQ_MODE	libpi/include/rpi-constants.h	/^#define IRQ_MODE /;"	d
+IRQ_basic_pending	libpi/include/rpi-interrupts.h	/^    IRQ_basic_pending   = IRQ_Base+0,       \/\/ 0x200$/;"	e	enum:__anon21
+IRQ_pending_1	libpi/include/rpi-interrupts.h	/^    IRQ_pending_1       = IRQ_Base+4,       \/\/ 0x204$/;"	e	enum:__anon21
+IRQ_pending_2	libpi/include/rpi-interrupts.h	/^    IRQ_pending_2       = IRQ_Base+8,       \/\/ 0x208$/;"	e	enum:__anon21
+LD	libpi/defs.mk	/^LD  = $(ARM)-ld$/;"	m
+LEX_CIRC	libesp/esp-lex.h	/^#define LEX_CIRC /;"	d
+LEX_IMPL	libesp/esp-lex-simple.c	/^#define LEX_IMPL /;"	d	file:
+LEX_IMPL	libesp/esp-lex.h	/^#   define LEX_IMPL /;"	d
+LEX_MAXBUF	libesp/esp-lex-simple.h	/^#define LEX_MAXBUF /;"	d
+LEX_SIMPLE	libesp/esp-lex.h	/^#define LEX_SIMPLE /;"	d
+LIB	libpi/manifest.mk	/^LIB := libpi.a$/;"	m
+LINE_STR	libpi/libc/demand.h	/^#define LINE_STR(/;"	d
+LINE_STR_HELPER	libpi/libc/demand.h	/^#define LINE_STR_HELPER(/;"	d
+LPI	libpi/defs.mk	/^LPI ?= $(LPP)\/libpi.a$/;"	m
+LPP	libpi/defs.mk	/^LPP = $(CS140E_2023_LIBPI_PATH)$/;"	m
+MAGIC_BAUD_NUMBER	libpi/src/uart.c	/^const unsigned MAGIC_BAUD_NUMBER = 270;$/;"	v
+MAX_RT	demo/nrf-hw-support.h	/^#   define MAX_RT /;"	d
+MAX_TYPES	libpi/libc/random.c	/^#define	MAX_TYPES	/;"	d	file:
+MEMMAP	libpi/defs.mk	/^MEMMAP ?= $(LPP)\/memmap$/;"	m
+MK_CP15_FUNC	libpi/include/rpi-asm.h	/^#define MK_CP15_FUNC(/;"	d
+MK_FN	libpi/include/rpi-asm.h	/^#define MK_FN(/;"	d
+MK_FN	libpi/include/rpi-constants.h	/^#define MK_FN(/;"	d
+MK_STR	libpi/include/asm-helpers.h	/^#define MK_STR(/;"	d
+MK_STR	libpi/src/armv6-debug.h	/^#define MK_STR(/;"	d
+MK_TRAMPOLINE	libpi/staff-src/unhandled-exception.S	/^#define MK_TRAMPOLINE(name, offset, fn)     \\$/;"	d
+MK_WEAK_SYM	libpi/include/rpi-asm.h	/^#define MK_WEAK_SYM(/;"	d
+NETWORK	libesp/esp-constants.h	/^#define NETWORK /;"	d
+NRF_CONFIG	demo/nrf-hw-support.h	/^    NRF_CONFIG      = 0x0,$/;"	e	enum:__anon3
+NRF_DYNPD	demo/nrf-hw-support.h	/^    NRF_DYNPD       = 0x1c,$/;"	e	enum:__anon3
+NRF_EN_AA	demo/nrf-hw-support.h	/^    NRF_EN_AA       = 0x1,$/;"	e	enum:__anon3
+NRF_EN_RXADDR	demo/nrf-hw-support.h	/^    NRF_EN_RXADDR   = 0x2,$/;"	e	enum:__anon3
+NRF_FEATURE	demo/nrf-hw-support.h	/^    NRF_FEATURE     = 0x1d,$/;"	e	enum:__anon3
+NRF_FIFO_STATUS	demo/nrf-hw-support.h	/^    NRF_FIFO_STATUS = 0x17,$/;"	e	enum:__anon3
+NRF_NOP	demo/nrf-hw-support.h	/^    NRF_NOP                 = 0b11111111,$/;"	e	enum:__anon4
+NRF_OBSERVE_TX	demo/nrf-hw-support.h	/^    NRF_OBSERVE_TX  = 0x8,$/;"	e	enum:__anon3
+NRF_PIPEID_EMPTY	demo/nrf-hw-support.h	/^#   define NRF_PIPEID_EMPTY /;"	d
+NRF_PKT_MAX	demo/nrf.h	/^enum { NRF_PKT_MAX = 32 };$/;"	e	enum:__anon8
+NRF_RF_CH	demo/nrf-hw-support.h	/^    NRF_RF_CH       = 0x5,$/;"	e	enum:__anon3
+NRF_RF_SETUP	demo/nrf-hw-support.h	/^    NRF_RF_SETUP    = 0x6,$/;"	e	enum:__anon3
+NRF_RPD	demo/nrf-hw-support.h	/^    NRF_RPD         = 0x9,$/;"	e	enum:__anon3
+NRF_RX_ADDR_P0	demo/nrf-hw-support.h	/^    NRF_RX_ADDR_P0  = 0xa,$/;"	e	enum:__anon3
+NRF_RX_ADDR_P1	demo/nrf-hw-support.h	/^    NRF_RX_ADDR_P1  = 0xb,$/;"	e	enum:__anon3
+NRF_RX_ADDR_P2	demo/nrf-hw-support.h	/^    NRF_RX_ADDR_P2  = 0xc,$/;"	e	enum:__anon3
+NRF_RX_ADDR_P3	demo/nrf-hw-support.h	/^    NRF_RX_ADDR_P3  = 0xd,$/;"	e	enum:__anon3
+NRF_RX_ADDR_P4	demo/nrf-hw-support.h	/^    NRF_RX_ADDR_P4  = 0xe,$/;"	e	enum:__anon3
+NRF_RX_ADDR_P5	demo/nrf-hw-support.h	/^    NRF_RX_ADDR_P5  = 0xf,$/;"	e	enum:__anon3
+NRF_RX_PW_P0	demo/nrf-hw-support.h	/^    NRF_RX_PW_P0    = 0x11,$/;"	e	enum:__anon3
+NRF_RX_PW_P1	demo/nrf-hw-support.h	/^    NRF_RX_PW_P1    = 0x12,$/;"	e	enum:__anon3
+NRF_RX_PW_P2	demo/nrf-hw-support.h	/^    NRF_RX_PW_P2    = 0x13,$/;"	e	enum:__anon3
+NRF_RX_PW_P3	demo/nrf-hw-support.h	/^    NRF_RX_PW_P3    = 0x14,$/;"	e	enum:__anon3
+NRF_RX_PW_P4	demo/nrf-hw-support.h	/^    NRF_RX_PW_P4    = 0x15,$/;"	e	enum:__anon3
+NRF_RX_PW_P5	demo/nrf-hw-support.h	/^    NRF_RX_PW_P5    = 0x16,$/;"	e	enum:__anon3
+NRF_R_RX_PAYLOAD	demo/nrf-hw-support.h	/^    NRF_R_RX_PAYLOAD        = 0b01100001,$/;"	e	enum:__anon4
+NRF_SETUP_AW	demo/nrf-hw-support.h	/^    NRF_SETUP_AW    = 0x3,$/;"	e	enum:__anon3
+NRF_SETUP_RETR	demo/nrf-hw-support.h	/^    NRF_SETUP_RETR  = 0x4,$/;"	e	enum:__anon3
+NRF_STATUS	demo/nrf-hw-support.h	/^    NRF_STATUS      = 0x7,$/;"	e	enum:__anon3
+NRF_TIMEOUT	demo/nrf-public.c	/^enum { NRF_TIMEOUT = 10};$/;"	e	enum:__anon2	file:
+NRF_TX_ADDR	demo/nrf-hw-support.h	/^    NRF_TX_ADDR     = 0x10,$/;"	e	enum:__anon3
+NRF_WR_REG	demo/nrf-hw-support.h	/^    NRF_WR_REG              = 0b00100000,$/;"	e	enum:__anon4
+NRF_W_TX_PAYLOAD	demo/nrf-hw-support.h	/^    NRF_W_TX_PAYLOAD        = 0b10100000,$/;"	e	enum:__anon4
+NTRIALS	libesp/libesp.h	/^enum { NTRIALS = 128 };$/;"	e	enum:__anon34
+OCP	libpi/defs.mk	/^OCP = $(ARM)-objcopy$/;"	m
+OD	libpi/defs.mk	/^OD  = $(ARM)-objdump$/;"	m
+PASSWORD	libesp/esp-constants.h	/^#define PASSWORD /;"	d
+PI_MHz	libpi/include/rpi-constants.h	/^#define PI_MHz /;"	d
+PM_PASSWORD	libpi/staff-src/watchdog.c	/^    PM_PASSWORD = 0x5a000000,$/;"	e	enum:__anon30	file:
+PM_RSTC	libpi/staff-src/watchdog.c	/^    PM_RSTC = 0x2010001c,$/;"	e	enum:__anon30	file:
+PM_RSTC_RESET	libpi/staff-src/watchdog.c	/^    PM_RSTC_RESET = 0x00000102,$/;"	e	enum:__anon30	file:
+PM_RSTC_WRCFG_FULL_RESET	libpi/staff-src/watchdog.c	/^    PM_RSTC_WRCFG_FULL_RESET = 0x00000020,$/;"	e	enum:__anon30	file:
+PM_RSTS	libpi/staff-src/watchdog.c	/^    PM_RSTS = 0x20100020,$/;"	e	enum:__anon30	file:
+PM_RSTS_RASPBERRYPI_HALT	libpi/staff-src/watchdog.c	/^    PM_RSTS_RASPBERRYPI_HALT = 0x555 $/;"	e	enum:__anon30	file:
+PM_WDOG	libpi/staff-src/watchdog.c	/^    PM_WDOG = 0x20100024,$/;"	e	enum:__anon30	file:
+PRIM_RX	demo/nrf-hw-support.h	/^#   define PRIM_RX /;"	d
+PROGS	demo/Makefile	/^PROGS := $(wildcard tests\/uart-test-lib.c)$/;"	m
+PROTO_PSER_TLV_T_DATA	demo/esp-helpers.c	/^#define PROTO_PSER_TLV_T_DATA /;"	d	file:
+PROTO_PSER_TLV_T_DATA	demo/esp-helpers.h	/^#define PROTO_PSER_TLV_T_DATA /;"	d
+PROTO_PSER_TLV_T_EPNAME	demo/esp-helpers.c	/^#define PROTO_PSER_TLV_T_EPNAME /;"	d	file:
+PROTO_PSER_TLV_T_EPNAME	demo/esp-helpers.h	/^#define PROTO_PSER_TLV_T_EPNAME /;"	d
+PUT32	libpi/staff-start.S	/^PUT32:$/;"	l
+PUT32_T	libpi/libc/helper-macros.h	/^#define PUT32_T(/;"	d
+PUT8	libpi/staff-src/put-get.S	/^PUT8:$/;"	l
+PWR_UP	demo/nrf-hw-support.h	/^#   define PWR_UP /;"	d
+Q	libpi/libc/Q.h	/^typedef struct Q {$/;"	s
+Q_append	libpi/libc/Q.h	/^static void Q_append(Q_t *q, E *e) {$/;"	f
+Q_empty	libpi/libc/Q.h	/^static int Q_empty(Q_t *q)  { $/;"	f
+Q_init	libpi/libc/Q.h	/^static void Q_init(Q_t *q) {$/;"	f
+Q_insert_after	libpi/libc/Q.h	/^static void Q_insert_after(Q_t *q, E *e, E *e_new) {$/;"	f
+Q_mk	libpi/libc/Q.h	/^static inline Q_t Q_mk(void) {$/;"	f
+Q_nelem	libpi/libc/Q.h	/^static unsigned Q_nelem(Q_t *q) { return q->cnt; }$/;"	f
+Q_next	libpi/libc/Q.h	/^static E *Q_next(E *e)      { return e->next; }$/;"	f
+Q_pop	libpi/libc/Q.h	/^static E *Q_pop(Q_t *q) {$/;"	f
+Q_push	libpi/libc/Q.h	/^static void Q_push(Q_t *q, E *e) {$/;"	f
+Q_start	libpi/libc/Q.h	/^static E *Q_start(Q_t *q)   { return q->head; }$/;"	f
+Q_t	libpi/libc/Q.h	/^} Q_t;$/;"	t	typeref:struct:Q
+REG_LR_OFF	libpi/include/rpi-thread.h	/^#define REG_LR_OFF /;"	d
+REG_SP_OFF	libpi/include/rpi-thread.h	/^#define REG_SP_OFF /;"	d
+RF_DR_CLR	demo/nrf.h	/^#define RF_DR_CLR(/;"	d
+RF_DR_HI	demo/nrf.h	/^#define RF_DR_HI(/;"	d
+RF_DR_LO	demo/nrf.h	/^#define RF_DR_LO(/;"	d
+ROUTER_CONNECT	demo/tests/uart-test-wifi-connect.c	/^#define ROUTER_CONNECT /;"	d	file:
+RPI_ARMTIMER_CTRL_32BIT	libpi/include/rpi-armtimer.h	/^#define RPI_ARMTIMER_CTRL_32BIT /;"	d
+RPI_ARMTIMER_CTRL_DISABLE	libpi/include/rpi-armtimer.h	/^#define RPI_ARMTIMER_CTRL_DISABLE /;"	d
+RPI_ARMTIMER_CTRL_ENABLE	libpi/include/rpi-armtimer.h	/^#define RPI_ARMTIMER_CTRL_ENABLE /;"	d
+RPI_ARMTIMER_CTRL_INT_DISABLE	libpi/include/rpi-armtimer.h	/^#define RPI_ARMTIMER_CTRL_INT_DISABLE /;"	d
+RPI_ARMTIMER_CTRL_INT_ENABLE	libpi/include/rpi-armtimer.h	/^#define RPI_ARMTIMER_CTRL_INT_ENABLE /;"	d
+RPI_ARMTIMER_CTRL_PRESCALE_1	libpi/include/rpi-armtimer.h	/^#define RPI_ARMTIMER_CTRL_PRESCALE_1 /;"	d
+RPI_ARMTIMER_CTRL_PRESCALE_16	libpi/include/rpi-armtimer.h	/^#define RPI_ARMTIMER_CTRL_PRESCALE_16 /;"	d
+RPI_ARMTIMER_CTRL_PRESCALE_256	libpi/include/rpi-armtimer.h	/^#define RPI_ARMTIMER_CTRL_PRESCALE_256 /;"	d
+RPI_BASIC_ACCESS_ERROR_0_IRQ	libpi/include/rpi-interrupts.h	/^#define RPI_BASIC_ACCESS_ERROR_0_IRQ /;"	d
+RPI_BASIC_ACCESS_ERROR_1_IRQ	libpi/include/rpi-interrupts.h	/^#define RPI_BASIC_ACCESS_ERROR_1_IRQ /;"	d
+RPI_BASIC_ARM_DOORBELL_0_IRQ	libpi/include/rpi-interrupts.h	/^#define RPI_BASIC_ARM_DOORBELL_0_IRQ /;"	d
+RPI_BASIC_ARM_DOORBELL_1_IRQ	libpi/include/rpi-interrupts.h	/^#define RPI_BASIC_ARM_DOORBELL_1_IRQ /;"	d
+RPI_BASIC_ARM_MAILBOX_IRQ	libpi/include/rpi-interrupts.h	/^#define RPI_BASIC_ARM_MAILBOX_IRQ /;"	d
+RPI_BASIC_ARM_TIMER_IRQ	libpi/include/rpi-interrupts.h	/^#define RPI_BASIC_ARM_TIMER_IRQ /;"	d
+RPI_BASIC_GPU_0_HALTED_IRQ	libpi/include/rpi-interrupts.h	/^#define RPI_BASIC_GPU_0_HALTED_IRQ /;"	d
+RPI_BASIC_GPU_1_HALTED_IRQ	libpi/include/rpi-interrupts.h	/^#define RPI_BASIC_GPU_1_HALTED_IRQ /;"	d
+RPI_COMPILED	libpi/include/rpi.h	/^#define RPI_COMPILED$/;"	d
+RPI_VECTOR_START	libpi/staff-src/interrupts-c.c	/^#   define RPI_VECTOR_START /;"	d	file:
+RUN	demo/Makefile	/^RUN=1$/;"	m
+RUN	libpi/manifest.mk	/^RUN = 1$/;"	m
+RX_DR	demo/nrf-hw-support.h	/^#   define RX_DR /;"	d
+SEP_0	libpi/libc/random.c	/^#define	SEP_0	/;"	d	file:
+SEP_1	libpi/libc/random.c	/^#define	SEP_1	/;"	d	file:
+SEP_2	libpi/libc/random.c	/^#define	SEP_2	/;"	d	file:
+SEP_3	libpi/libc/random.c	/^#define	SEP_3	/;"	d	file:
+SEP_4	libpi/libc/random.c	/^#define	SEP_4	/;"	d	file:
+SET_WIFI_STATION_MODE	demo/tests/uart-test-wifi-connect.c	/^#define SET_WIFI_STATION_MODE /;"	d	file:
+SET_WIFI_STATION_MODE	demo/tests/uart-test.c	/^#define SET_WIFI_STATION_MODE /;"	d	file:
+SPI_CE0	libpi/include/spi.h	/^#define SPI_CE0 /;"	d
+SPI_CE1	libpi/include/spi.h	/^#define SPI_CE1 /;"	d
+SRC	libpi/Makefile	/^SRC :=  $(SRC)                              \\$/;"	m
+SRC	libpi/Makefile	/^SRC :=$/;"	m
+SRC_LOC_MK	libpi/include/src-loc.h	/^#define SRC_LOC_MK(/;"	d
+STACK_ADDR	libpi/include/rpi-constants.h	/^#define STACK_ADDR /;"	d
+STACK_ADDR2	libpi/include/rpi-constants.h	/^#define STACK_ADDR2 /;"	d
+START	libpi/defs.mk	/^START ?= $(LPP)\/staff-start.o$/;"	m
+START	libpi/manifest.mk	/^START := .\/staff-start.o$/;"	m
+STATESIZE	libpi/libc/pi-random.c	/^#define STATESIZE /;"	d	file:
+STATESIZE	libpi/libc/random.c	/^#define STATESIZE /;"	d	file:
+STRING	libpi/include/rpi-asm.h	/^#define STRING(/;"	d
+STRING2	libpi/include/rpi-asm.h	/^#define STRING2(/;"	d
+SUBDIRS	libesp/Makefile	/^SUBDIRS= Makefile.unix Makefile.pi$/;"	m
+SUPER_MODE	libpi/include/rpi-constants.h	/^#define SUPER_MODE /;"	d
+SYS_MODE	libpi/include/rpi-constants.h	/^#define SYS_MODE /;"	d
+TARGET	libesp/Makefile	/^all: TARGET=all$/;"	m
+TARGET	libesp/Makefile	/^check: TARGET=check$/;"	m
+TARGET	libesp/Makefile	/^clean: TARGET=clean$/;"	m
+TARGET	libesp/Makefile	/^tags: TARGET=tags$/;"	m
+THREAD_MAXSTACK	libpi/include/rpi-thread.h	/^#define THREAD_MAXSTACK /;"	d
+TIMEOUT	demo/at-constants.h	/^#define TIMEOUT /;"	d
+TIME_CYC	libpi/include/cycle-count.h	/^#define TIME_CYC(/;"	d
+TIME_CYC_10	libpi/include/cycle-count.h	/^#define TIME_CYC_10(/;"	d
+TIME_CYC_PRINT	libpi/include/cycle-count.h	/^#define TIME_CYC_PRINT(/;"	d
+TIME_CYC_PRINT10	libpi/include/cycle-count.h	/^#define TIME_CYC_PRINT10(/;"	d
+TRAMPOLINE	libpi/staff-src/unhandled-exception.S	/^#define TRAMPOLINE(fn)              \\$/;"	d
+TTYUSB	libpi/manifest.mk	/^TTYUSB = $/;"	m
+TX_DS	demo/nrf-hw-support.h	/^#   define TX_DS /;"	d
+TYPE_0	libpi/libc/random.c	/^#define	TYPE_0	/;"	d	file:
+TYPE_1	libpi/libc/random.c	/^#define	TYPE_1	/;"	d	file:
+TYPE_2	libpi/libc/random.c	/^#define	TYPE_2	/;"	d	file:
+TYPE_3	libpi/libc/random.c	/^#define	TYPE_3	/;"	d	file:
+TYPE_4	libpi/libc/random.c	/^#define	TYPE_4	/;"	d	file:
+T_to_u32	libpi/libc/helper-macros.h	/^#define T_to_u32(/;"	d
+T_to_u8	libpi/libc/helper-macros.h	/^#define T_to_u8(/;"	d
+UART_CUR	demo/atlib.h	/^#define UART_CUR /;"	d
+UART_CUR	demo/tests/uart-test-wifi-connect.c	/^#define UART_CUR /;"	d	file:
+UART_CUR	demo/tests/uart-test.c	/^#define UART_CUR /;"	d	file:
+UNDEF_MODE	libpi/include/rpi-constants.h	/^#define UNDEF_MODE /;"	d
+USER_MODE	libpi/include/rpi-constants.h	/^#define USER_MODE /;"	d
+USE_LEX_CIRC	libesp/esp-parse.c	/^#define USE_LEX_CIRC$/;"	d	file:
+W_TX_PAYLOAD_NO_ACK	demo/nrf-hw-support.h	/^    W_TX_PAYLOAD_NO_ACK     = 0b10110000,$/;"	e	enum:__anon4
+_XSTRING	libpi/libc/demand.h	/^#define _XSTRING(/;"	d
+__ARMV6_DEBUG_H__	libpi/src/armv6-debug.h	/^#define __ARMV6_DEBUG_H__$/;"	d
+__ARMV6_DEBUG_IMPL_H__	libpi/src/armv6-debug-impl.h	/^#define __ARMV6_DEBUG_IMPL_H__$/;"	d
+__ASM_HELPERS_H__	libpi/include/asm-helpers.h	/^#define __ASM_HELPERS_H__$/;"	d
+__CPSR_UTIL_H__	libpi/include/cpsr-util.h	/^#define __CPSR_UTIL_H__$/;"	d
+__CQ2_H__	libpi/libc/circular.h	/^#define __CQ2_H__$/;"	d
+__CYCLE_UTIL_H__	libpi/include/cycle-util.h	/^#define __CYCLE_UTIL_H__$/;"	d
+__DEMAND_H__	libpi/libc/demand.h	/^#define __DEMAND_H__$/;"	d
+__ESP_COMMANDS_H__	libesp/esp-commands.h	/^#define __ESP_COMMANDS_H__$/;"	d
+__ESP_CONSTANTS_H__	libesp/esp-constants.h	/^#define __ESP_CONSTANTS_H__$/;"	d
+__ESP_LEX_H__	libesp/esp-lex.h	/^#define __ESP_LEX_H__$/;"	d
+__ESP_LEX_SIMPLE_H__	libesp/esp-lex-simple.h	/^#define __ESP_LEX_SIMPLE_H__$/;"	d
+__ESP_PARSE_H__	libesp/esp-parse.h	/^#define __ESP_PARSE_H__$/;"	d
+__ESP_RUN_H__	libesp/esp-run.h	/^#define __ESP_RUN_H__$/;"	d
+__FAST_HASH32_H__	libpi/libc/fast-hash32.h	/^#define __FAST_HASH32_H__$/;"	d
+__GPIO_H__	libpi/include/gpio.h	/^#define __GPIO_H__$/;"	d
+__LIBESP_H__	libesp/libesp.h	/^#define __LIBESP_H__$/;"	d
+__MEMMAP_H__	libpi/include/memmap.h	/^#define __MEMMAP_H__$/;"	d
+__NRF_DEFAULT_VALUES_H__	demo/nrf-default-values.h	/^#define __NRF_DEFAULT_VALUES_H__$/;"	d
+__NRF_H__	demo/nrf.h	/^#define __NRF_H__$/;"	d
+__NRF_REGISTERS_H__	demo/nrf-hw-support.h	/^#define __NRF_REGISTERS_H__$/;"	d
+__NRF_TEST_H__	demo/nrf-test.h	/^#define __NRF_TEST_H__$/;"	d
+__PI_BITSUPPORT_H__	libpi/libc/bit-support.h	/^#define __PI_BITSUPPORT_H__$/;"	d
+__PI_RANDOM_H__	libpi/libc/pi-random.h	/^#define __PI_RANDOM_H__$/;"	d
+__PI__SUPPORT_H__	libesp/pi-support.h	/^#define __PI__SUPPORT_H__$/;"	d
+__PRETTY_TIME_H__	libpi/libc/pretty-time.h	/^#define __PRETTY_TIME_H__$/;"	d
+__Q_H__	libpi/libc/Q.h	/^#define __Q_H__$/;"	d
+__RANDOM_H__	libpi/libc/random.h	/^#define __RANDOM_H__$/;"	d
+__RPI_ARMTIMER_H__	libpi/include/rpi-armtimer.h	/^#define __RPI_ARMTIMER_H__$/;"	d
+__RPI_ASM_H__	libpi/include/rpi-asm.h	/^#define __RPI_ASM_H__$/;"	d
+__RPI_CONSTANTS__	libpi/include/rpi-constants.h	/^#define __RPI_CONSTANTS__$/;"	d
+__RPI_EXTRA_H__	libpi/include/your-prototypes.h	/^#define __RPI_EXTRA_H__$/;"	d
+__RPI_H__	libpi/include/rpi.h	/^#define __RPI_H__$/;"	d
+__RPI_INLINE_ASM_H__	libpi/include/rpi-inline-asm.h	/^#define __RPI_INLINE_ASM_H__$/;"	d
+__RPI_INTERRUPT_H__	libpi/include/rpi-interrupts.h	/^#define __RPI_INTERRUPT_H__$/;"	d
+__RPI_MACROS_H__	libpi/libc/helper-macros.h	/^#define __RPI_MACROS_H__$/;"	d
+__RPI_THREAD_H__	libpi/include/rpi-thread.h	/^#define __RPI_THREAD_H__$/;"	d
+__SPI_H__	libpi/include/spi.h	/^#define __SPI_H__$/;"	d
+__SRC_LOC_H__	libpi/include/src-loc.h	/^#define __SRC_LOC_H__$/;"	d
+__SW_UART_H__	demo/sw-uart.h	/^#define __SW_UART_H__$/;"	d
+__SW_UART_H__	libpi/include/sw-uart.h	/^#define __SW_UART_H__$/;"	d
+__TIMEOUT_H__	libpi/include/timeout.h	/^#define __TIMEOUT_H__$/;"	d
+__TIMER_INTERRUPT_H__	libpi/include/timer-interrupt.h	/^#define __TIMER_INTERRUPT_H__$/;"	d
+__TIME_PRINT_H__	libpi/libc/time-print.h	/^#define __TIME_PRINT_H__$/;"	d
+__UNIX_SUPPORT_H__	libesp/unix-support.h	/^#define __UNIX_SUPPORT_H__$/;"	d
+__VECTOR_BASE_SET_H__	libpi/src/vector-base.h	/^#define __VECTOR_BASE_SET_H__$/;"	d
+__WATCHDOG_H__	libpi/include/watchdog.h	/^#define __WATCHDOG_H__$/;"	d
+_cstart	libpi/staff-src/cstart.c	/^void _cstart() {$/;"	f
+_start	libpi/staff-start.S	/^_start:$/;"	l
+active_p	libesp/libesp.h	/^             active_p;$/;"	m	struct:esp_conn
+active_p	libesp/libesp.h	/^    unsigned active_p;$/;"	m	struct:esp
+aligned	libpi/libc/helper-macros.h	/^#define aligned(/;"	d
+aligned	libpi/libc/memcpy.c	/^#define aligned(/;"	d	file:
+aligned	libpi/libc/memset.c	/^#define aligned(/;"	d	file:
+aligned4	libpi/libc/helper-macros.h	/^#define aligned4(/;"	d
+aligned4	libpi/libc/memcpy.c	/^#define aligned4(/;"	d	file:
+aligned4	libpi/libc/memset.c	/^#define aligned4(/;"	d	file:
+aligned8	libpi/libc/memcpy.c	/^#define aligned8(/;"	d	file:
+aligned8	libpi/libc/memset.c	/^#define aligned8(/;"	d	file:
+annot	libpi/include/rpi-thread.h	/^    const char *annot;$/;"	m	struct:rpi_thread
+arg	libpi/include/rpi-thread.h	/^    void *arg;          \/\/ this can serve as private data.$/;"	m	struct:rpi_thread
+arm_timer_Base	libpi/include/rpi-armtimer.h	/^    arm_timer_Base = 0x2000B400,$/;"	e	enum:__anon28
+arm_timer_Control	libpi/include/rpi-armtimer.h	/^    arm_timer_Control = arm_timer_Base + 8,$/;"	e	enum:__anon28
+arm_timer_FreeRunningCounter	libpi/include/rpi-armtimer.h	/^    arm_timer_FreeRunningCounter = arm_timer_Base + 32$/;"	e	enum:__anon28
+arm_timer_IRQClear	libpi/include/rpi-armtimer.h	/^    arm_timer_IRQClear = arm_timer_Base + 12,$/;"	e	enum:__anon28
+arm_timer_Load	libpi/include/rpi-armtimer.h	/^    arm_timer_Load = arm_timer_Base + 0,$/;"	e	enum:__anon28
+arm_timer_MaskedIRQ	libpi/include/rpi-armtimer.h	/^    arm_timer_MaskedIRQ = arm_timer_Base + 20,$/;"	e	enum:__anon28
+arm_timer_PreDivider	libpi/include/rpi-armtimer.h	/^    arm_timer_PreDivider = arm_timer_Base + 28,$/;"	e	enum:__anon28
+arm_timer_RAWIRQ	libpi/include/rpi-armtimer.h	/^    arm_timer_RAWIRQ = arm_timer_Base + 16,$/;"	e	enum:__anon28
+arm_timer_Reload	libpi/include/rpi-armtimer.h	/^    arm_timer_Reload = arm_timer_Base + 24,$/;"	e	enum:__anon28
+arm_timer_Value	libpi/include/rpi-armtimer.h	/^    arm_timer_Value = arm_timer_Base + 4,$/;"	e	enum:__anon28
+asm_align	libpi/include/rpi.h	/^#   define asm_align(/;"	d
+asm_bad_exception	libpi/include/rpi-asm.h	/^#define asm_bad_exception(/;"	d
+asm_bad_exception_helper	libpi/staff-src/asm-helpers.c	/^void asm_bad_exception_helper(uint32_t pc, const char *msg) {$/;"	f
+asm_call_helper_w_msg	libpi/include/rpi-asm.h	/^#define asm_call_helper_w_msg(/;"	d
+asm_not_implemented	libpi/include/rpi-asm.h	/^#define asm_not_implemented(/;"	d
+asm_not_implemented_helper	libpi/staff-src/asm-helpers.c	/^void asm_not_implemented_helper(uint32_t pc, const char *msg) {$/;"	f
+asm_not_reached	libpi/include/rpi-asm.h	/^#define asm_not_reached(/;"	d
+asm_not_reached_helper	libpi/staff-src/asm-helpers.c	/^void asm_not_reached_helper(uint32_t pc, const char *msg) {$/;"	f
+asm_todo	libpi/include/rpi-asm.h	/^#define asm_todo(/;"	d
+asm_todo_helper	libpi/staff-src/asm-helpers.c	/^void asm_todo_helper(uint32_t pc, const char *todo_msg) {$/;"	f
+assert	libpi/libc/demand.h	/^#define assert(/;"	d
+assign32_T	libpi/libc/helper-macros.h	/^#define assign32_T(/;"	d
+at_cmd	libesp/esp-run.c	/^int at_cmd(esp_t *e, const char *cmd, const char *response) {$/;"	f
+at_cmd_extra	libesp/esp-run.c	/^int at_cmd_extra(esp_t *e, const char *cmd, const char *response) {$/;"	f
+at_cmd_extrav	libesp/esp-run.h	/^#define at_cmd_extrav(/;"	d
+at_cmd_fn_t	libesp/esp-run.h	/^typedef int (*at_cmd_fn_t)(esp_t *e, void *data);$/;"	t
+at_cmd_ok	libesp/esp-run.h	/^static inline int at_cmd_ok(esp_t *e, const char *cmd) {$/;"	f
+at_cmd_rep_v	libesp/esp-run.h	/^#define at_cmd_rep_v(/;"	d
+at_cmdv	libesp/esp-run.h	/^#define at_cmdv(/;"	d
+at_delay	libesp/esp-commands.c	/^int at_delay(void) {$/;"	f
+at_dev_t	demo/atlib.h	/^} at_dev_t;$/;"	t	typeref:struct:__anon17
+at_drain	libesp/esp-commands.c	/^int at_drain(esp_t *e) {$/;"	f
+at_init	demo/atlib.h	/^at_dev_t at_init() {$/;"	f
+at_user_level	libpi/staff-src/reboot.c	/^int at_user_level(void) {$/;"	f
+baud	demo/at-constants.h	/^  baud = 115200$/;"	e	enum:__anon13
+baud	demo/sw-uart.h	/^    uint32_t baud;$/;"	m	struct:__anon14
+baud	demo/tests/uart-test-wifi-connect.c	/^  baud = 115200$/;"	e	enum:__anon5	file:
+baud	demo/tests/uart-test.c	/^  baud = 115200$/;"	e	enum:__anon7	file:
+baud	libpi/include/sw-uart.h	/^    uint32_t baud;$/;"	m	struct:__anon23
+bcm_set_interrupts_off	libpi/staff-src/interrupts-c.c	/^void bcm_set_interrupts_off(void) {$/;"	f
+bcr_reg	libpi/src/armv6-debug-impl.h	/^struct bcr_reg {$/;"	s
+bit_clr	libpi/libc/bit-support.h	/^bit_clr(uint32_t x, unsigned bit) {$/;"	f
+bit_count	libpi/libc/bit-support.h	/^bit_count(uint32_t x) {$/;"	f
+bit_get	libpi/libc/bit-support.h	/^#define bit_get /;"	d
+bit_is_off	libpi/libc/bit-support.h	/^bit_is_off(uint32_t x, unsigned bit) {$/;"	f
+bit_is_on	libpi/libc/bit-support.h	/^bit_is_on(uint32_t x, unsigned bit) {$/;"	f
+bit_isset	libpi/libc/bit-support.h	/^#define bit_isset /;"	d
+bit_not	libpi/libc/bit-support.h	/^bit_not(uint32_t x, unsigned bit) {$/;"	f
+bit_set	libpi/libc/bit-support.h	/^bit_set(uint32_t x, unsigned bit) {$/;"	f
+bits_clr	libpi/libc/bit-support.h	/^bits_clr(uint32_t x, unsigned lb, unsigned ub) {$/;"	f
+bits_diff	libpi/libc/bit-support.h	/^bits_diff(uint32_t A, uint32_t B) {$/;"	f
+bits_eq	libpi/libc/bit-support.h	/^bits_eq(uint32_t x, unsigned lb, unsigned ub, uint32_t val) {$/;"	f
+bits_get	libpi/libc/bit-support.h	/^bits_get(uint32_t x, unsigned lb, unsigned ub) {$/;"	f
+bits_intersect	libpi/libc/bit-support.h	/^bits_intersect(uint32_t x, uint32_t y) {$/;"	f
+bits_mask	libpi/libc/bit-support.h	/^static inline uint32_t bits_mask(unsigned nbits) {$/;"	f
+bits_not	libpi/libc/bit-support.h	/^static inline uint32_t bits_not(uint32_t x) {$/;"	f
+bits_set	libpi/libc/bit-support.h	/^bits_set(uint32_t x, unsigned lb, unsigned ub, uint32_t v) {$/;"	f
+bits_union	libpi/libc/bit-support.h	/^bits_union(uint32_t x, uint32_t y) {$/;"	f
+breakpoint_enable	libpi/src/armv6-debug-impl.h	/^  uint32_t breakpoint_enable:1, \/\/ 0 to disable, 1 to enable$/;"	m	struct:bcr_reg
+brp	libpi/src/armv6-debug.h	/^                brp:4,          \/\/ 24:27 --- number of breakpoint register$/;"	m	struct:debug_id
+bvr	libpi/src/armv6-debug-impl.h	/^           bvr:2, \/\/ context ID matching$/;"	m	struct:bcr_reg
+byte_addr_sel	libpi/src/armv6-debug-impl.h	/^           byte_addr_sel:4, \/\/ set which bytes of addr word trigger access. $/;"	m	struct:wcr_reg
+byte_addr_select	libpi/src/armv6-debug-impl.h	/^           byte_addr_select:4, \/\/ set to 0b1111$/;"	m	struct:bcr_reg
+c_buf	libpi/libc/circular.h	/^    cqe_t c_buf[CQ_N];$/;"	m	struct:__anon19
+caches_disable	libpi/staff-src/cache.c	/^void caches_disable(void) {$/;"	f
+caches_enable	libpi/staff-src/cache.c	/^void caches_enable(void) {$/;"	f
+caches_is_enabled	libpi/staff-src/cache.c	/^int caches_is_enabled(void) {$/;"	f
+can_read_timeout	libesp/unix-support.c	/^int can_read_timeout(int fd, unsigned usec) {$/;"	f
+ce	libpi/include/spi.h	/^    unsigned mosi,miso,clk,ce;$/;"	m	struct:__anon26
+ce_pin	demo/nrf.h	/^            ce_pin,     \/\/ GPIO pin used to signal NRF.$/;"	m	struct:__anon9
+channel	demo/nrf.h	/^    uint8_t channel;    \/\/ what MHz channel the RF is using.$/;"	m	struct:__anon9
+check_bitfield	libpi/libc/helper-macros.h	/^#define check_bitfield(/;"	d
+check_dev_offsets	libpi/libc/helper-macros.h	/^void check_dev_offsets(void) {$/;"	f
+check_off	libpi/libc/helper-macros.h	/^#define check_off(/;"	d
+check_off_static	libpi/libc/helper-macros.h	/^#define check_off_static(/;"	d
+chip	libpi/include/spi.h	/^    unsigned chip;$/;"	m	struct:__anon26
+clean_reboot	libpi/staff-src/clean-reboot.c	/^void clean_reboot(void) {$/;"	f
+client_addr	demo/nrf-default-values.h	/^    client_addr = 0xe5e5e5,$/;"	e	enum:__anon15
+client_conf	demo/nrf-test.h	/^client_conf(uint32_t nbytes) {$/;"	f
+client_mk	demo/nrf-test.h	/^client_mk(uint32_t rxaddr, uint32_t nbytes, int ack_p) {$/;"	f
+client_mk_ack	demo/nrf-test.h	/^client_mk_ack(uint32_t rxaddr, uint32_t nbytes) {$/;"	f
+client_mk_noack	demo/nrf-test.h	/^client_mk_noack(uint32_t rxaddr, uint32_t nbytes) {$/;"	f
+client_p	libesp/libesp.h	/^    unsigned client_p:1,$/;"	m	struct:esp_conn
+clk	libpi/include/spi.h	/^    unsigned mosi,miso,clk,ce;$/;"	m	struct:__anon26
+cmd_ack	libesp/esp-run.c	/^int cmd_ack(esp_t *e, const char *cmd, int extra_p) {$/;"	f
+cmd_echo_line	libesp/esp-run.c	/^void cmd_echo_line(esp_t *e, const char *msg) {$/;"	f
+cmd_num	libesp/esp-run.c	/^static unsigned cmd_num = 1;$/;"	v	file:
+cmd_puts	libesp/esp-run.c	/^void cmd_puts(esp_t *e, const char *cmd_op) {$/;"	f
+cmd_putsv	libesp/esp-run.h	/^#define cmd_putsv(/;"	d
+cmd_reject_line	libesp/esp-run.h	/^#define cmd_reject_line(/;"	d
+cmd_response	libesp/esp-run.c	/^int cmd_response(esp_t *e, const char *end, int can_fail_p, int extra_p) {$/;"	f
+cmd_responsef	libesp/esp-run.c	/^int cmd_responsef(esp_t *e, int can_fail_p, int extra_p, const char *fmt, ...) {$/;"	f
+cmd_responsev	libesp/esp-run.c	/^int cmd_responsev(esp_t *e, int can_fail_p, int extra_p, const char *fmt, va_list arg) {$/;"	f
+cnt	libpi/libc/Q.h	/^    unsigned cnt;$/;"	m	struct:Q
+compose_tlv	demo/esp-helpers.c	/^uint16_t compose_tlv(uint8_t* buf, uint8_t* data, uint16_t data_length)$/;"	f
+config	demo/nrf.h	/^    nrf_conf_t config;$/;"	m	struct:nrf
+context	libpi/src/armv6-debug.h	/^                context:4,      \/\/ 20:23$/;"	m	struct:debug_id
+coproc_mk	libpi/src/armv6-debug.h	/^#define coproc_mk(/;"	d
+coproc_mk_get	libpi/src/armv6-debug.h	/^#define coproc_mk_get(/;"	d
+coproc_mk_set	libpi/src/armv6-debug.h	/^#define coproc_mk_set(/;"	d
+core_halted	libpi/src/armv6-debug-impl.h	/^  uint32_t core_halted:1,$/;"	m	struct:dscr_reg
+core_restarted	libpi/src/armv6-debug-impl.h	/^           core_restarted:1,$/;"	m	struct:dscr_reg
+counter_enabled	libpi/include/rpi-armtimer.h	/^              counter_enabled:1,        \/\/ :9 1 = free running counter enabled.$/;"	m	struct:__anon27
+counter_prescaler	libpi/include/rpi-armtimer.h	/^              counter_prescaler:7;      \/\/ 16:23 free running counter prescaler.$/;"	m	struct:__anon27
+cp14_bcr0_disable	libpi/src/armv6-debug-impl.h	/^static inline void cp14_bcr0_disable(void) {$/;"	f
+cp14_bcr0_enable	libpi/src/armv6-debug-impl.h	/^static inline void cp14_bcr0_enable(void) {$/;"	f
+cp14_bcr0_is_enabled	libpi/src/armv6-debug-impl.h	/^static inline int cp14_bcr0_is_enabled(void) {$/;"	f
+cp14_debug_id_get	libpi/src/armv6-debug.h	/^static inline uint32_t cp14_debug_id_get(void) {$/;"	f
+cp14_disable	libpi/src/armv6-debug-impl.h	/^static inline void cp14_disable(void) {$/;"	f
+cp14_enable	libpi/src/armv6-debug-impl.h	/^static inline void cp14_enable(void) {$/;"	f
+cp14_is_enabled	libpi/src/armv6-debug-impl.h	/^static inline int cp14_is_enabled(void) {$/;"	f
+cp14_wcr0_disable	libpi/src/armv6-debug-impl.h	/^static inline void cp14_wcr0_disable(void) {$/;"	f
+cp14_wcr0_enable	libpi/src/armv6-debug-impl.h	/^static inline void cp14_wcr0_enable(void) {$/;"	f
+cp14_wcr0_is_enabled	libpi/src/armv6-debug-impl.h	/^static inline int cp14_wcr0_is_enabled(void) {$/;"	f
+cp_asm	libpi/include/asm-helpers.h	/^#define cp_asm(/;"	d
+cp_asm_fn	libpi/include/asm-helpers.h	/^#define cp_asm_fn(/;"	d
+cp_asm_get	libpi/include/asm-helpers.h	/^#define cp_asm_get(/;"	d
+cp_asm_get_fn	libpi/include/asm-helpers.h	/^#define cp_asm_get_fn(/;"	d
+cp_asm_raw	libpi/include/asm-helpers.h	/^#define cp_asm_raw(/;"	d
+cp_asm_set	libpi/include/asm-helpers.h	/^#define cp_asm_set(/;"	d
+cp_asm_set_fn	libpi/include/asm-helpers.h	/^#define cp_asm_set_fn(/;"	d
+cp_asm_set_raw	libpi/include/asm-helpers.h	/^#define cp_asm_set_raw(/;"	d
+cp_asm_set_raw_fn	libpi/include/asm-helpers.h	/^#define cp_asm_set_raw_fn(/;"	d
+cpsr_get	libpi/include/rpi-inline-asm.h	/^static inline uint32_t cpsr_get(void) {$/;"	f
+cpsr_int_disable	libpi/include/rpi-inline-asm.h	/^static inline uint32_t cpsr_int_disable(void) {$/;"	f
+cpsr_int_enable	libpi/include/rpi-inline-asm.h	/^static inline uint32_t cpsr_int_enable(void) {$/;"	f
+cpsr_int_enabled	libpi/include/rpi-inline-asm.h	/^static inline int cpsr_int_enabled(void) {$/;"	f
+cpsr_int_reset	libpi/include/rpi-inline-asm.h	/^static inline uint32_t cpsr_int_reset(uint32_t cpsr) {$/;"	f
+cpsr_set	libpi/include/rpi-inline-asm.h	/^static inline void cpsr_set(uint32_t cpsr) {$/;"	f
+cq_ckpt	libpi/libc/circular.h	/^static inline unsigned cq_ckpt(cq_t *c) { return c->tail; }$/;"	f
+cq_empty	libpi/libc/circular.h	/^static inline int cq_empty(cq_t *q) { gcc_mb(); return q->head == q->tail; }$/;"	f
+cq_full	libpi/libc/circular.h	/^static inline int cq_full(cq_t *q) { gcc_mb(); return (q->head+1) % (CQ_N) == q->tail; }$/;"	f
+cq_init	libpi/libc/circular.h	/^static inline void cq_init(cq_t *c, unsigned errors_fatal_p) {$/;"	f
+cq_nelem	libpi/libc/circular.h	/^static inline unsigned cq_nelem(cq_t *q) { gcc_mb(); return (q->head - q->tail) % (CQ_N); }$/;"	f
+cq_nspace	libpi/libc/circular.h	/^static inline unsigned cq_nspace(cq_t *q) { return (CQ_N-1) - cq_nelem(q); }$/;"	f
+cq_ok	libpi/libc/circular.h	/^static inline void cq_ok(cq_t *c) {$/;"	f
+cq_peek	libpi/libc/circular.h	/^static inline int cq_peek(cq_t *c, cqe_t *e) {$/;"	f
+cq_peek_n	libpi/libc/circular.h	/^static inline int cq_peek_n(cq_t *c, cqe_t *v, unsigned n) {$/;"	f
+cq_pop	libpi/libc/circular.h	/^static inline cqe_t cq_pop(cq_t *c) {$/;"	f
+cq_pop32	libpi/libc/circular.h	/^static inline uint32_t cq_pop32(cq_t *c) {$/;"	f
+cq_pop32_noblk	libpi/libc/circular.h	/^static inline int cq_pop32_noblk(cq_t *c, uint32_t *x) {$/;"	f
+cq_pop_n	libpi/libc/circular.h	/^static inline void cq_pop_n(cq_t *c, void *data, unsigned n) {$/;"	f
+cq_pop_n_noblk	libpi/libc/circular.h	/^static inline int cq_pop_n_noblk(cq_t *q, void *data, unsigned n) {$/;"	f
+cq_pop_nonblock	libpi/libc/circular.h	/^static inline int cq_pop_nonblock(cq_t *c, cqe_t *e) {$/;"	f
+cq_print	libpi/libc/circular.h	/^static inline void cq_print(cq_t *c) {$/;"	f
+cq_push	libpi/libc/circular.h	/^static inline int cq_push(cq_t *c, cqe_t x) {$/;"	f
+cq_push32	libpi/libc/circular.h	/^static inline int cq_push32(cq_t *c, uint32_t x) {$/;"	f
+cq_push_n	libpi/libc/circular.h	/^static inline int cq_push_n(cq_t *c, const void *data, unsigned n) {$/;"	f
+cq_restore	libpi/libc/circular.h	/^static inline void cq_restore(cq_t *c, unsigned ckpt) { c->tail = ckpt; }$/;"	f
+cq_t	libpi/libc/circular.h	/^} cq_t;$/;"	t	typeref:struct:__anon19
+cqe_t	libpi/libc/circular.h	/^    typedef CQE_T cqe_t;$/;"	t
+cqe_t	libpi/libc/circular.h	/^    typedef unsigned char cqe_t;$/;"	t
+crc32_tab	libpi/libc/crc.c	/^static uint32_t crc32_tab[] = {$/;"	v	file:
+crc_two_byte	demo/nrf-driver.c	/^#   define crc_two_byte /;"	d	file:
+custom_loader	libpi/staff-src/custom-loader.c	/^void custom_loader(void) {$/;"	f
+cycle_cnt_init	libpi/include/cycle-count.h	/^#define cycle_cnt_init(/;"	d
+cycle_cnt_read	libpi/include/cycle-count.h	/^#define cycle_cnt_read(/;"	d
+cycle_per_bit	demo/sw-uart.h	/^    uint32_t cycle_per_bit;  \/\/ cycles between each bit.$/;"	m	struct:__anon14
+cycle_per_bit	libpi/include/sw-uart.h	/^    uint32_t cycle_per_bit;  \/\/ cycles between each bit.$/;"	m	struct:__anon23
+cycles_to_nanosec	libpi/include/rpi-constants.h	/^#define cycles_to_nanosec(/;"	d
+dBm_0	demo/nrf.h	/^    dBm_0       = 0b11 << 1, \/\/ 11mA$/;"	e	enum:__anon11
+dBm_minus12	demo/nrf.h	/^    dBm_minus12 = 0b01 << 1, \/\/ 7.5mA$/;"	e	enum:__anon11
+dBm_minus18	demo/nrf.h	/^    dBm_minus18 = 0b00 << 1, \/\/ 7mA$/;"	e	enum:__anon11
+dBm_minus6	demo/nrf.h	/^    dBm_minus6  = 0b10 << 1, \/\/ 9mA$/;"	e	enum:__anon11
+data	demo/nrf.h	/^    void     *data; \/\/ opaque client data pointer.$/;"	m	struct:nrf
+data_abort_vector	libpi/staff-src/default-handler-data-abort.c	/^void data_abort_vector(unsigned pc) { INT_UNHANDLED("data abort", pc); }$/;"	f
+datafault_from_ld	libpi/src/armv6-debug-impl.h	/^static inline int datafault_from_ld(void) {$/;"	f
+datafault_from_st	libpi/src/armv6-debug-impl.h	/^static inline int datafault_from_st(void) {$/;"	f
+dbgack	libpi/src/armv6-debug-impl.h	/^           dbgack:1,$/;"	m	struct:dscr_reg
+debug	libpi/libc/demand.h	/^#define debug(/;"	d
+debug_id	libpi/src/armv6-debug.h	/^struct debug_id {$/;"	s
+debug_rev	libpi/src/armv6-debug.h	/^                debug_rev:4,   \/\/ 12:15$/;"	m	struct:debug_id
+debug_ver	libpi/src/armv6-debug.h	/^                debug_ver:4,    \/\/ 16:19$/;"	m	struct:debug_id
+default_handle_out_of_order_msg	libesp/esp-commands.c	/^int default_handle_out_of_order_msg(esp_t *e) {$/;"	f
+default_putchar	libpi/libc/putchar.c	/^static int default_putchar(int c) { $/;"	f	file:
+default_seed	libpi/libc/pi-random.c	/^static int default_seed = 0;$/;"	v	file:
+degrees	libpi/libc/random.c	/^    int degrees[MAX_TYPES];$/;"	m	struct:random_poly_info	file:
+delay_cycles	libpi/staff-src/delay-ncycles.c	/^void delay_cycles(uint32_t ticks) {$/;"	f
+delay_ms	libpi/staff-src/timer.c	/^void delay_ms(uint32_t ms) {$/;"	f
+delay_ncycles	libpi/include/cycle-util.h	/^static inline unsigned delay_ncycles(unsigned start, unsigned n) {$/;"	f
+delay_sec	libpi/staff-src/timer.c	/^void delay_sec(uint32_t sec) {$/;"	f
+delay_us	libpi/staff-src/timer.c	/^void delay_us(uint32_t us) {$/;"	f
+demand	libpi/libc/demand.h	/^#define demand(/;"	d
+dev_barrier	libpi/staff-src/mem-barrier.S	/^dev_barrier:$/;"	l
+dfsr_reg	libpi/src/armv6-debug-impl.h	/^struct dfsr_reg {$/;"	s
+div	libpi/include/spi.h	/^    unsigned div;$/;"	m	struct:__anon26
+dmb	libpi/staff-src/mem-barrier.S	/^dmb:$/;"	l
+do_at_cmd	libesp/esp-run.c	/^static int do_at_cmd(esp_t *e, const char *cmd, const char *response, int extra_p) {$/;"	f	file:
+domain	libpi/src/armv6-debug-impl.h	/^           domain:4, \/\/ 3-65$/;"	m	struct:dfsr_reg
+dsb	libpi/staff-src/mem-barrier.S	/^dsb:$/;"	l
+dscr_reg	libpi/src/armv6-debug-impl.h	/^struct dscr_reg {$/;"	s
+emit_val	libpi/libc/printk.c	/^static void emit_val(unsigned base, uint32_t u) {$/;"	f	file:
+enable_crc	demo/nrf-driver.c	/^#   define enable_crc /;"	d	file:
+enable_linking	libpi/src/armv6-debug-impl.h	/^           enable_linking:1, \/\/ 0 to disable$/;"	m	struct:bcr_reg
+enable_linking	libpi/src/armv6-debug-impl.h	/^           enable_linking:1, \/\/ 0 to disable, 1 to enable$/;"	m	struct:wcr_reg
+end_ptr	libpi/libc/random.h	/^    int32_t *end_ptr;       \/* Pointer behind state table.  *\/$/;"	m	struct:random_data
+errors_fatal_p	libpi/libc/circular.h	/^    unsigned errors_fatal_p:1;$/;"	m	struct:__anon19
+esp	libesp/libesp.h	/^typedef struct esp {$/;"	s
+esp_conn	libesp/libesp.h	/^typedef struct esp_conn {$/;"	s
+esp_conn_t	libesp/libesp.h	/^} esp_conn_t;$/;"	t	typeref:struct:esp_conn
+esp_connect_to_wifi	libesp/esp-commands.c	/^int esp_connect_to_wifi(esp_t *e) {$/;"	f
+esp_debug	libesp/esp-lex.h	/^#   define esp_debug(/;"	d
+esp_die	libesp/esp-run.c	/^#define esp_die(/;"	d	file:
+esp_handle_t	libesp/pi-support.h	/^typedef struct do_not_use *esp_handle_t;$/;"	t	typeref:struct:do_not_use
+esp_handle_t	libesp/unix-support.h	/^typedef int esp_handle_t;$/;"	t
+esp_hard_reset	libesp/esp-commands.c	/^int esp_hard_reset(esp_t *e) {$/;"	f
+esp_has_data_timeout	libesp/pi-support.c	/^int esp_has_data_timeout(lex_t *l, unsigned usec) {$/;"	f
+esp_has_data_timeout	libesp/unix-support.c	/^int esp_has_data_timeout(lex_t *l, unsigned usec) {$/;"	f
+esp_is_recv	libesp/esp-commands.c	/^int esp_is_recv(esp_t *e, unsigned *ch, void *data, unsigned maxbytes) {$/;"	f
+esp_is_up	libesp/esp-commands.c	/^int esp_is_up(esp_t *e) {$/;"	f
+esp_log	libesp/unix-support.c	/^void esp_log(int fd) {$/;"	f
+esp_mk	libesp/libesp.h	/^static inline esp_t esp_mk(lex_t *l, const char *wifi, const char *password) {$/;"	f
+esp_read	libesp/pi-support.c	/^int esp_read(lex_t *l, void *buf, unsigned maxbytes, unsigned usec) {$/;"	f
+esp_read	libesp/unix-support.c	/^int esp_read(lex_t *l, void *buf, unsigned maxbytes, unsigned usec) {$/;"	f
+esp_send	libesp/esp-commands.c	/^int esp_send(esp_t *e, unsigned ch, const void *data, unsigned n) {$/;"	f
+esp_set_verbose	libesp/esp-run.c	/^void esp_set_verbose(int verbose_p) {$/;"	f
+esp_setup_wifi	libesp/esp-commands.c	/^int esp_setup_wifi(esp_t *e) {$/;"	f
+esp_start_tcp_client	libesp/esp-commands.c	/^int esp_start_tcp_client(esp_t *e, const char *server_ip, unsigned portn) {$/;"	f
+esp_start_tcp_server	libesp/esp-commands.c	/^int esp_start_tcp_server(esp_t *e, unsigned portnum) {$/;"	f
+esp_t	libesp/libesp.h	/^} esp_t;$/;"	t	typeref:struct:esp
+esp_usleep	libesp/pi-support.c	/^int esp_usleep(unsigned usec) {$/;"	f
+esp_usleep	libesp/unix-support.c	/^int esp_usleep(unsigned usec) {$/;"	f
+esp_verbose_p	libesp/esp-run.c	/^unsigned esp_verbose_p = 1;$/;"	v
+esp_write_exact	libesp/pi-support.c	/^int esp_write_exact(lex_t *l, const void *buf, unsigned n) {$/;"	f
+esp_write_exact	libesp/unix-support.c	/^int esp_write_exact(lex_t *l, const void *buf, unsigned n) {$/;"	f
+exec_arm_inst_enable	libpi/src/armv6-debug-impl.h	/^           exec_arm_inst_enable:1, \/\/ 0 if disabled, 1 if enabled$/;"	m	struct:dscr_reg
+expect_blank_line	libesp/esp-parse.c	/^void expect_blank_line(lex_t *l) {$/;"	f
+expect_literal_string	libesp/esp-parse.c	/^void expect_literal_string(lex_t *l, char *out, unsigned nbytes) {$/;"	f
+expect_tok	libesp/esp-parse.c	/^void expect_tok(lex_t *l, const char *tok) {$/;"	f
+expect_uint	libesp/esp-parse.c	/^void expect_uint(lex_t *l, unsigned *x) {$/;"	f
+fast_hash	libpi/libc/fast-hash32.h	/^static inline uint32_t fast_hash(const void * data, uint32_t len) {$/;"	f
+fast_hash32	libpi/libc/fast-hash32.h	/^static inline uint32_t fast_hash32(const void * data, uint32_t len) {$/;"	f
+fast_hash_inc32	libpi/libc/fast-hash32.h	/^static inline uint32_t fast_hash_inc32(const void * _data, uint32_t len, uint32_t hash) {$/;"	f
+fast_interrupt_vector	libpi/staff-src/default-handler-fast.c	/^void fast_interrupt_vector(unsigned pc) { INT_UNHANDLED("fast", pc); }$/;"	f
+fence	libpi/libc/circular.h	/^    unsigned fence;$/;"	m	struct:__anon19
+file	libpi/include/src-loc.h	/^    const char *file;$/;"	m	struct:__anon22
+fiq_vector	libpi/staff-src/default-handler-fast.c	/^void fiq_vector(unsigned pc) { INT_UNHANDLED("fast", pc); }$/;"	f
+fn	libpi/include/rpi-thread.h	/^    void (*fn)(void *arg);$/;"	m	struct:rpi_thread
+fptr	libpi/libc/random.h	/^    int32_t *fptr;      \/* Front pointer.  *\/$/;"	m	struct:random_data
+frac_t	demo/nrf-hw-support.c	/^} frac_t;$/;"	t	typeref:struct:__anon18	file:
+fraction	demo/nrf-hw-support.c	/^    unsigned fraction;$/;"	m	struct:__anon18	file:
+func	libpi/include/src-loc.h	/^    const char *func;$/;"	m	struct:__anon22
+gcc_mb	libpi/include/rpi.h	/^#define gcc_mb(/;"	d
+get16bits	libpi/libc/fast-hash32.h	/^#define get16bits(/;"	d
+get16bits	libpi/libc/fast-hash32.h	/^#undef get16bits$/;"	d
+get32	libpi/staff-start.S	/^get32:$/;"	l
+get32_T	libpi/libc/helper-macros.h	/^#define get32_T(/;"	d
+get8	libpi/staff-src/put-get.S	/^get8:$/;"	l
+get_at	demo/atlib.h	/^int get_at(at_dev_t a, char* res) {$/;"	f
+get_gmr	demo/atlib.h	/^int get_gmr(at_dev_t a, char* res) {$/;"	f
+get_nonblank_line	libesp/esp-parse.c	/^int get_nonblank_line(lex_t *l, char *buf, unsigned nbytes) {$/;"	f
+gpio_clr0	libpi/src/gpio.c	/^    gpio_clr0     = (GPIO_BASE + 0x28),$/;"	e	enum:__anon31	file:
+gpio_func_t	libpi/include/gpio.h	/^} gpio_func_t;$/;"	t	typeref:enum:__anon24
+gpio_gpafen0	libpi/src/gpio.c	/^    gpio_gpafen0  = (GPIO_BASE + 0x88), \/\/ falling edge detect$/;"	e	enum:__anon31	file:
+gpio_gpafen1	libpi/src/gpio.c	/^    gpio_gpafen1  = (GPIO_BASE + 0x8C), \/\/ falling edge detect$/;"	e	enum:__anon31	file:
+gpio_gparen0	libpi/src/gpio.c	/^    gpio_gparen0  = (GPIO_BASE + 0x7c), \/\/ rising edge detect$/;"	e	enum:__anon31	file:
+gpio_gparen1	libpi/src/gpio.c	/^    gpio_gparen1  = (GPIO_BASE + 0x80), \/\/ rising edge detect$/;"	e	enum:__anon31	file:
+gpio_hen0	libpi/src/gpio.c	/^    gpio_hen0     = (GPIO_BASE + 0x64), \/\/ pin high detect enable $/;"	e	enum:__anon31	file:
+gpio_hen1	libpi/src/gpio.c	/^    gpio_hen1     = (GPIO_BASE + 0x68), \/\/ pin high detect enable$/;"	e	enum:__anon31	file:
+gpio_len0	libpi/src/gpio.c	/^    gpio_len0     = (GPIO_BASE + 0x70), \/\/ pin low detect enable  $/;"	e	enum:__anon31	file:
+gpio_len1	libpi/src/gpio.c	/^    gpio_len1     = (GPIO_BASE + 0x74), \/\/ pin low detect enable  $/;"	e	enum:__anon31	file:
+gpio_lev0	libpi/src/gpio.c	/^    gpio_lev0     = (GPIO_BASE + 0x34),$/;"	e	enum:__anon31	file:
+gpio_ppud	libpi/src/gpio.c	/^    gpio_ppud     = (GPIO_BASE + 0x94),$/;"	e	enum:__anon31	file:
+gpio_ppudclk0	libpi/src/gpio.c	/^    gpio_ppudclk0 = (GPIO_BASE + 0x98)$/;"	e	enum:__anon31	file:
+gpio_pud_off	libpi/src/gpio.c	/^void gpio_pud_off(unsigned pin){$/;"	f
+gpio_read	libpi/src/gpio.c	/^int gpio_read(unsigned pin) {$/;"	f
+gpio_set0	libpi/src/gpio.c	/^    gpio_set0     = (GPIO_BASE + 0x1C),$/;"	e	enum:__anon31	file:
+gpio_set_function	libpi/src/gpio.c	/^void gpio_set_function(unsigned pin, gpio_func_t fn) {$/;"	f
+gpio_set_input	libpi/src/gpio.c	/^void gpio_set_input(unsigned pin) {$/;"	f
+gpio_set_off	libpi/src/gpio.c	/^void gpio_set_off(unsigned pin) {$/;"	f
+gpio_set_on	libpi/src/gpio.c	/^void gpio_set_on(unsigned pin) {$/;"	f
+gpio_set_output	libpi/src/gpio.c	/^void gpio_set_output(unsigned pin) {$/;"	f
+gpio_set_pulldown	libpi/src/gpio.c	/^void gpio_set_pulldown(unsigned pin) {$/;"	f
+gpio_set_pullup	libpi/src/gpio.c	/^void gpio_set_pullup(unsigned pin) {$/;"	f
+gpio_write	libpi/src/gpio.c	/^void gpio_write(unsigned pin, unsigned v) {$/;"	f
+h	libesp/esp-lex-simple.h	/^    esp_handle_t h;$/;"	m	struct:__anon35
+handle_connect	libesp/esp-commands.c	/^void handle_connect(esp_t *e, unsigned ch) {$/;"	f
+handle_disconnect	libesp/esp-commands.c	/^void handle_disconnect(esp_t *e, unsigned ch) {$/;"	f
+handle_ooo_client	libesp/esp-commands.c	/^static int handle_ooo_client(esp_t *e) {$/;"	f	file:
+handle_ooo_msg	libesp/libesp.h	/^    int (*handle_ooo_msg)(struct esp *self);$/;"	m	struct:esp
+handle_ooo_server	libesp/esp-commands.c	/^static int handle_ooo_server(esp_t *e) {$/;"	f	file:
+head	libpi/libc/Q.h	/^    E *head, *tail;$/;"	m	struct:Q
+head	libpi/libc/circular.h	/^    unsigned head, tail;$/;"	m	struct:__anon19
+heartbeat	libpi/staff-src/watchdog.c	/^static unsigned heartbeat = 0;$/;"	v	file:
+ifsr_reg	libpi/src/armv6-debug-impl.h	/^struct ifsr_reg {$/;"	s
+imprecises_data_aborts_ignored	libpi/src/armv6-debug-impl.h	/^           imprecises_data_aborts_ignored:1, \/\/ read-only$/;"	m	struct:dscr_reg
+initialized_p	libpi/libc/pi-random.c	/^static int initialized_p = 0;$/;"	v	file:
+initstate_r	libpi/libc/random.c	/^int initstate_r (unsigned int seed, char *arg_state, size_t n, struct random_data *buf)$/;"	f
+int_enabled	libpi/include/rpi-armtimer.h	/^              int_enabled:1,            \/\/ :5 1 = timer interrupt enabled$/;"	m	struct:__anon27
+int_init	libpi/staff-src/interrupts-c.c	/^void int_init(void) {$/;"	f
+int_is_enabled	libpi/libc/circular.h	/^#   define int_is_enabled(/;"	d
+int_pin	demo/nrf.h	/^            int_pin;    \/\/ GPIO pin used for interrupts.  we don't use today.$/;"	m	struct:__anon9
+int_vector	libpi/staff-src/default-handler-int.c	/^void int_vector(unsigned pc) { INT_UNHANDLED("interrupt", pc); }$/;"	f
+interrupt_vector	libpi/staff-src/default-handler-interrupt.c	/^void interrupt_vector(unsigned pc) { INT_UNHANDLED("interrupt", pc); }$/;"	f
+interrupts_bit	libpi/src/armv6-debug-impl.h	/^           interrupts_bit:1, \/\/ 0 if enabled, 1 if disabled$/;"	m	struct:dscr_reg
+is_aligned	libpi/libc/helper-macros.h	/^#define is_aligned(/;"	d
+is_aligned_ptr	libpi/libc/helper-macros.h	/^#define is_aligned_ptr(/;"	d
+is_connect	libesp/esp-commands.c	/^static int is_connect(esp_t *e, unsigned *ch) {$/;"	f	file:
+is_disconnect	libesp/esp-commands.c	/^static int is_disconnect(esp_t *e, unsigned *ch) {$/;"	f	file:
+is_eol	libesp/esp-parse.c	/^static int is_eol(lex_t *l) {$/;"	f	file:
+is_eol_ch	libesp/esp-parse.c	/^static int is_eol_ch(int ch) {$/;"	f	file:
+is_space	libesp/esp-parse.c	/^static int is_space(lex_t *l) {$/;"	f	file:
+is_space_ch	libesp/esp-parse.c	/^static int is_space_ch(int ch) {$/;"	f	file:
+isalpha	libesp/pi-support.h	/^static inline int isalpha(int c) { $/;"	f
+isdigit	libesp/pi-support.h	/^static inline int isdigit(int c) { return c >= '0' && c <= '9'; }$/;"	f
+isprint	libesp/pi-support.h	/^static inline int isprint(int c) {$/;"	f
+issue_tcp_connect	libesp/esp-commands.c	/^issue_tcp_connect(esp_t *e, unsigned *ch, const char *server_ip, unsigned portn) {$/;"	f	file:
+kbytes_per_sec	demo/nrf-hw-support.c	/^kbytes_per_sec(unsigned tot_bytes, unsigned tot_usec) {$/;"	f	file:
+kmalloc_init	libpi/include/rpi.h	/^static inline void kmalloc_init(void) {$/;"	f
+l	libesp/esp-lex-simple.h	/^    lex_t *l;$/;"	m	struct:__anon36
+l	libesp/libesp.h	/^    lex_t *l;$/;"	m	struct:esp
+ld_str_access	libpi/src/armv6-debug-impl.h	/^           ld_str_access:2, \/\/ 0b11 for either$/;"	m	struct:wcr_reg
+lex_ckpt_t	libesp/esp-lex-simple.h	/^} lex_ckpt_t;$/;"	t	typeref:struct:__anon36
+lex_dump	libesp/esp-lex.c	/^void lex_dump(lex_t *l) {$/;"	f
+lex_dump_str	libesp/esp-lex-simple.h	/^#define lex_dump_str /;"	d
+lex_dump_str_simple	libesp/esp-lex-simple.c	/^void lex_dump_str_simple(lex_t *l) {$/;"	f
+lex_empty	libesp/esp-lex-simple.h	/^static inline int lex_empty(lex_t *l) { $/;"	f
+lex_get_ckpt	libesp/esp-lex-simple.h	/^static inline lex_ckpt_t lex_get_ckpt(lex_t *l ){$/;"	f
+lex_getc	libesp/esp-lex-simple.h	/^#define lex_getc /;"	d
+lex_getc_simple	libesp/esp-lex-simple.c	/^int lex_getc_simple(lex_t *l) {$/;"	f
+lex_has_data	libesp/esp-lex.c	/^int lex_has_data(lex_t *l) {$/;"	f
+lex_init	libesp/esp-lex-simple.h	/^#define lex_init /;"	d
+lex_init_simple	libesp/esp-lex-simple.c	/^void lex_init_simple(lex_t *l, esp_handle_t h) {$/;"	f
+lex_nstream	libesp/esp-lex-simple.h	/^static inline int lex_nstream(lex_t *l) { $/;"	f
+lex_panic	libesp/esp-lex.h	/^#define lex_panic(/;"	d
+lex_peek	libesp/esp-lex-simple.h	/^#define lex_peek /;"	d
+lex_peek_simple	libesp/esp-lex-simple.c	/^int lex_peek_simple(lex_t *l) {$/;"	f
+lex_push_n	libesp/esp-lex-simple.h	/^static inline void lex_push_n(lex_t *l, uint8_t *buf, unsigned n) {$/;"	f
+lex_readin	libesp/esp-lex.c	/^int lex_readin(lex_t *l) {$/;"	f
+lex_restore_ckpt	libesp/esp-lex-simple.h	/^static inline void lex_restore_ckpt(lex_ckpt_t *ck) {$/;"	f
+lex_t	libesp/esp-lex-simple.h	/^} lex_t;$/;"	t	typeref:struct:__anon35
+likely	libpi/include/rpi.h	/^#define likely(/;"	d
+lineno	libpi/include/src-loc.h	/^    unsigned lineno;$/;"	m	struct:__anon22
+linked_brp	libpi/src/armv6-debug-impl.h	/^           linked_brp:4,$/;"	m	struct:bcr_reg
+linked_brp	libpi/src/armv6-debug-impl.h	/^           linked_brp:4,$/;"	m	struct:wcr_reg
+loc_debug	libpi/include/src-loc.h	/^#define loc_debug(/;"	d
+loc_panic	libpi/include/src-loc.h	/^#define loc_panic(/;"	d
+log_fd	libesp/unix-support.c	/^static int log_fd = 0;$/;"	v	file:
+main	libesp/unix-example.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	libesp/unix-main.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	libpi/libc/random.c	/^int main() {$/;"	f
+malloc	libesp/pi-support.h	/^#define malloc /;"	d
+mask_int	demo/nrf-driver.c	/^#   define mask_int /;"	d	file:
+match	libesp/esp-parse.c	/^int match(lex_t *l, const char *fmt, ...) {$/;"	f
+match_blank_line	libesp/esp-parse.c	/^int match_blank_line(lex_t *l) {$/;"	f
+match_busy	libesp/esp-run.c	/^static int match_busy(lex_t *l) {$/;"	f	file:
+match_eol	libesp/esp-parse.c	/^static int match_eol(lex_t *l) {$/;"	f	file:
+match_line	libesp/esp-parse.c	/^int match_line(lex_t *l, const char *fmt, ...) {$/;"	f
+match_linev	libesp/esp-parse.c	/^int match_linev(lex_t *l, const char *fmt, va_list args) {$/;"	f
+match_literal_string	libesp/esp-parse.c	/^int match_literal_string(lex_t *l, char *out, unsigned nbytes) {$/;"	f
+match_tok	libesp/esp-parse.c	/^int match_tok(lex_t *l, const char *tok) {$/;"	f
+match_uint	libesp/esp-parse.c	/^int match_uint(lex_t *l, unsigned *x) {$/;"	f
+matchv	libesp/esp-parse.c	/^int matchv(lex_t *l, const char *fmt, va_list args) {$/;"	f
+memcmp	libpi/libc/memcmp.c	/^int memcmp(const void *_s1, const void *_s2, size_t nbytes) {$/;"	f
+memcpy	libpi/libc/memcpy.c	/^void *memcpy(void *dst, const void *src, size_t nbytes) { $/;"	f
+memcpy_end	libpi/libc/memcpy.c	/^void memcpy_end(void) { }$/;"	f
+memiszero	libpi/libc/memiszero.c	/^int memiszero(const void *_p, unsigned n) {$/;"	f
+memmove	libpi/libc/memmove.c	/^void *memmove(void *dst, const void *src, size_t count) {$/;"	f
+memset	libpi/libc/memset.c	/^    void *(memset)(void *dst, int c, size_t n) {$/;"	f
+memset	libpi/libc/memset.c	/^void *memset(void *dst, int c, size_t n) {$/;"	f
+method_of_dbg_entry	libpi/src/armv6-debug-impl.h	/^           method_of_dbg_entry:4, \/\/ 0b0001 if breakpoint$/;"	m	struct:dscr_reg
+miso	libpi/include/spi.h	/^    unsigned mosi,miso,clk,ce;$/;"	m	struct:__anon26
+mode_eq	libpi/include/cpsr-util.h	/^static inline int mode_eq(uint32_t mode) { return mode_get(cpsr_get()) == mode; }$/;"	f
+mode_get	libpi/include/cpsr-util.h	/^static inline uint32_t mode_get(uint32_t cpsr) {$/;"	f
+mode_is_super	libpi/include/cpsr-util.h	/^static inline int mode_is_super(void) { return mode_eq(SUPER_MODE); }$/;"	f
+mode_is_user	libpi/include/cpsr-util.h	/^static inline int mode_is_user(void) { return mode_eq(USER_MODE); }$/;"	f
+mode_legal	libpi/include/cpsr-util.h	/^static inline int mode_legal(unsigned mode) {$/;"	f
+mode_select	libpi/src/armv6-debug-impl.h	/^           mode_select:1, \/\/ 0 for monitor debug-mode, 1 for halting$/;"	m	struct:dscr_reg
+mode_set	libpi/include/cpsr-util.h	/^static inline uint32_t mode_set(uint32_t cpsr, unsigned mode) {$/;"	f
+mode_str	libpi/include/cpsr-util.h	/^static inline const char * mode_str(uint32_t cpsr) {$/;"	f
+monitor_mode_enable	libpi/src/armv6-debug-impl.h	/^           monitor_mode_enable:1, \/\/ 0 to disable, 1 to enable$/;"	m	struct:dscr_reg
+mosi	libpi/include/spi.h	/^    unsigned mosi,miso,clk,ce;$/;"	m	struct:__anon26
+msec	libpi/libc/pretty-time.h	/^    uint32_t msec;$/;"	m	struct:__anon20
+mu_reg_t	libpi/src/uart.c	/^} mu_reg_t;$/;"	t	typeref:enum:__anon32	file:
+n	libesp/esp-lex-simple.h	/^    unsigned n;     \/\/ total characters in buffer$/;"	m	struct:__anon35
+name	libpi/staff-src/unhandled-exception.S	/^name:                         \\$/;"	l
+nbytes	demo/nrf.h	/^    uint8_t nbytes;     \/\/ how many bytes the the packet is.$/;"	m	struct:__anon9
+next	libpi/include/rpi-thread.h	/^	struct rpi_thread *next;$/;"	m	struct:rpi_thread	typeref:struct:rpi_thread::rpi_thread
+nonsecure_world_status	libpi/src/armv6-debug-impl.h	/^           nonsecure_world_status:1,$/;"	m	struct:dscr_reg
+not_reached	libpi/libc/demand.h	/^#define not_reached(/;"	d
+notmain	demo/tests/dummy-test.c	/^void notmain(void) {$/;"	f
+notmain	demo/tests/uart-test-lib.c	/^void notmain(void) {$/;"	f
+notmain	demo/tests/uart-test-wifi-connect.c	/^void notmain(void) {$/;"	f
+notmain	demo/tests/uart-test.c	/^void notmain(void) {$/;"	f
+notmain	libesp/pi-main.c	/^void notmain(void) {$/;"	f
+nrf	demo/nrf.h	/^typedef struct nrf {$/;"	s
+nrf_1Mbps	demo/nrf.h	/^    nrf_1Mbps   = 0,            \/\/ both RF_DR_HI=0 and RF_DR_LO=0.$/;"	e	enum:__anon10
+nrf_250kbps	demo/nrf.h	/^    nrf_250kbps = RF_DR_LO(1),  \/\/ RF_DR_LO=1, RF_DR_HI=0.$/;"	e	enum:__anon10
+nrf_2Mbps	demo/nrf.h	/^    nrf_2Mbps   = RF_DR_HI(1),  \/\/ RF_DR_LO=0, RF_DR_HI=1.$/;"	e	enum:__anon10
+nrf_assert	demo/nrf.h	/^#   define nrf_assert(/;"	d
+nrf_bit_clr	demo/nrf-hw-support.c	/^void nrf_bit_clr(nrf_t *n, uint8_t reg, unsigned bit) {$/;"	f
+nrf_bit_isset	demo/nrf-hw-support.c	/^int nrf_bit_isset(nrf_t *n, uint8_t reg, uint8_t bit_n) {$/;"	f
+nrf_bit_set	demo/nrf-hw-support.c	/^void nrf_bit_set(nrf_t *n, uint8_t reg, unsigned bit) {$/;"	f
+nrf_ce_val	demo/nrf-hw-support.h	/^static inline int nrf_ce_val(nrf_t *nic) {$/;"	f
+nrf_conf_mk	demo/nrf.h	/^nrf_conf_mk(uint32_t nbytes, uint32_t ch) {$/;"	f
+nrf_conf_print	demo/nrf-hw-support.c	/^void nrf_conf_print(const char *msg, nrf_conf_t *c) {$/;"	f
+nrf_conf_t	demo/nrf.h	/^} nrf_conf_t;$/;"	t	typeref:struct:__anon9
+nrf_datarate_t	demo/nrf.h	/^} nrf_datarate_t;$/;"	t	typeref:enum:__anon10
+nrf_db_t	demo/nrf.h	/^} nrf_db_t;$/;"	t	typeref:enum:__anon11
+nrf_debug	demo/nrf.h	/^#   define nrf_debug(/;"	d
+nrf_default_addr_nbytes	demo/nrf-default-values.h	/^    nrf_default_addr_nbytes         = 3,$/;"	e	enum:__anon16
+nrf_default_channel	demo/nrf-default-values.h	/^    nrf_default_channel             = 113,          $/;"	e	enum:__anon16
+nrf_default_data_rate	demo/nrf-default-values.h	/^    nrf_default_data_rate           = nrf_2Mbps,    $/;"	e	enum:__anon16
+nrf_default_db	demo/nrf-default-values.h	/^    nrf_default_db                  = dBm_0,$/;"	e	enum:__anon16
+nrf_default_nbytes	demo/nrf-default-values.h	/^    nrf_default_nbytes              = 4,            \/\/ 4 byte packets.$/;"	e	enum:__anon16
+nrf_default_retran_attempts	demo/nrf-default-values.h	/^    nrf_default_retran_attempts     = 6,            $/;"	e	enum:__anon16
+nrf_default_retran_delay	demo/nrf-default-values.h	/^    nrf_default_retran_delay        = 2000,         $/;"	e	enum:__anon16
+nrf_dump	demo/nrf-hw-support.c	/^void nrf_dump(const char *msg, nrf_t *nic) {$/;"	f
+nrf_get8	demo/nrf-hw-support.c	/^uint8_t nrf_get8(const nrf_t *n, uint8_t reg) {$/;"	f
+nrf_get_addr	demo/nrf-hw-support.c	/^uint32_t nrf_get_addr(nrf_t *nic, uint8_t reg, unsigned nbytes) {$/;"	f
+nrf_get_addr_nbytes	demo/nrf.h	/^nrf_get_addr_nbytes(nrf_t *nic) {$/;"	f
+nrf_get_pkts	demo/nrf-driver.c	/^int nrf_get_pkts(nrf_t *n) {$/;"	f
+nrf_getn	demo/nrf-hw-support.c	/^uint8_t nrf_getn(nrf_t *nic, uint8_t cmd, void *bytes, uint32_t nbytes) {$/;"	f
+nrf_has_max_rt_intr	demo/nrf-hw-support.h	/^static inline int nrf_has_max_rt_intr(nrf_t *nic) {$/;"	f
+nrf_has_rx_intr	demo/nrf-hw-support.h	/^static inline int nrf_has_rx_intr(nrf_t *nic) {$/;"	f
+nrf_has_tx_intr	demo/nrf-hw-support.h	/^static inline int nrf_has_tx_intr(nrf_t *nic) {$/;"	f
+nrf_init	demo/nrf-driver.c	/^nrf_t * nrf_init(nrf_conf_t c, uint32_t rxaddr, unsigned acked_p) {$/;"	f
+nrf_init_acked	demo/nrf.h	/^static inline nrf_t *nrf_init_acked(nrf_conf_t c, uint32_t rxaddr) {$/;"	f
+nrf_init_noack	demo/nrf.h	/^static inline nrf_t *nrf_init_noack(nrf_conf_t c, uint32_t rxaddr) {$/;"	f
+nrf_is_pwrup	demo/nrf-hw-support.h	/^static inline int nrf_is_pwrup(nrf_t *nic) {$/;"	f
+nrf_is_rx	demo/nrf-hw-support.h	/^static inline int nrf_is_rx(nrf_t *nic) {$/;"	f
+nrf_is_standbyI	demo/nrf-hw-support.h	/^static inline int nrf_is_standbyI(nrf_t *nic) {$/;"	f
+nrf_is_tx	demo/nrf-hw-support.h	/^static inline int nrf_is_tx(nrf_t *nic) {$/;"	f
+nrf_legal_Mhz	demo/nrf.h	/^static inline int nrf_legal_Mhz(unsigned d) {$/;"	f
+nrf_legal_nbytes	demo/nrf.h	/^static inline int nrf_legal_nbytes(unsigned nbytes) {$/;"	f
+nrf_nbytes_avail	demo/nrf-public.c	/^int nrf_nbytes_avail(nrf_t *n) {$/;"	f
+nrf_opt_assert	demo/nrf.h	/^#define nrf_opt_assert(/;"	d
+nrf_or8	demo/nrf-hw-support.c	/^uint8_t nrf_or8(nrf_t *n, uint8_t reg, uint8_t v) {$/;"	f
+nrf_output	demo/nrf.h	/^#define nrf_output(/;"	d
+nrf_pipe_is_acked	demo/nrf-hw-support.h	/^static inline int nrf_pipe_is_acked(nrf_t *n, unsigned p) {$/;"	f
+nrf_pipe_is_enabled	demo/nrf-hw-support.h	/^static inline int nrf_pipe_is_enabled(nrf_t *n, unsigned p) {$/;"	f
+nrf_put8	demo/nrf-hw-support.c	/^uint8_t nrf_put8(nrf_t *n, uint8_t reg, uint8_t v) {$/;"	f
+nrf_put8_chk	demo/nrf-hw-support.h	/^#define nrf_put8_chk(/;"	d
+nrf_put8_chk_helper	demo/nrf-hw-support.c	/^uint8_t nrf_put8_chk_helper(src_loc_t loc, nrf_t *nic, uint8_t reg, uint8_t v) {$/;"	f
+nrf_putn	demo/nrf-hw-support.c	/^uint8_t nrf_putn(nrf_t *nic, uint8_t cmd, const void *bytes, uint32_t nbytes) {$/;"	f
+nrf_read_exact	demo/nrf-public.c	/^int nrf_read_exact(nrf_t *nic, void *msg, unsigned nbytes) {$/;"	f
+nrf_read_exact_noblk	demo/nrf-public.c	/^int nrf_read_exact_noblk(nrf_t *nic, void *msg, unsigned nbytes) {$/;"	f
+nrf_read_exact_timeout	demo/nrf-public.c	/^int nrf_read_exact_timeout(nrf_t *nic, void *msg, unsigned nbytes, $/;"	f
+nrf_rt_intr_clr	demo/nrf-hw-support.h	/^static inline void nrf_rt_intr_clr(nrf_t *nic) {$/;"	f
+nrf_rx_fifo_empty	demo/nrf-hw-support.h	/^static inline int nrf_rx_fifo_empty(nrf_t *nic) {$/;"	f
+nrf_rx_fifo_full	demo/nrf-hw-support.h	/^static inline int nrf_rx_fifo_full(nrf_t *nic) {$/;"	f
+nrf_rx_flush	demo/nrf-hw-support.c	/^uint8_t nrf_rx_flush(const nrf_t *n) {$/;"	f
+nrf_rx_get_pipeid	demo/nrf-hw-support.h	/^static inline int nrf_rx_get_pipeid(nrf_t *n) {$/;"	f
+nrf_rx_has_packet	demo/nrf-hw-support.h	/^static int nrf_rx_has_packet(nrf_t *nic) {$/;"	f
+nrf_rx_intr_clr	demo/nrf-hw-support.h	/^static inline void nrf_rx_intr_clr(nrf_t *nic) {$/;"	f
+nrf_send_ack	demo/nrf-public.c	/^int nrf_send_ack(nrf_t *nic, uint32_t txaddr, $/;"	f
+nrf_send_noack	demo/nrf-public.c	/^int nrf_send_noack(nrf_t *nic, uint32_t txaddr, $/;"	f
+nrf_set_addr	demo/nrf-hw-support.c	/^void nrf_set_addr(nrf_t *nic, uint8_t reg, uint32_t addr, unsigned nbytes) {$/;"	f
+nrf_set_pwrup_off	demo/nrf-hw-support.h	/^static inline void nrf_set_pwrup_off(nrf_t *nic) {$/;"	f
+nrf_set_pwrup_on	demo/nrf-hw-support.h	/^static inline void nrf_set_pwrup_on(nrf_t *nic) {$/;"	f
+nrf_set_verbose	demo/nrf-hw-support.c	/^void nrf_set_verbose(int v_p) {$/;"	f
+nrf_stat_print	demo/nrf-hw-support.c	/^void nrf_stat_print(nrf_t *nic, const char *fmt, ...) {$/;"	f
+nrf_stat_start	demo/nrf.h	/^static inline void nrf_stat_start(nrf_t *nic) {$/;"	f
+nrf_t	demo/nrf.h	/^} nrf_t;$/;"	t	typeref:struct:nrf
+nrf_tx_fifo_empty	demo/nrf-hw-support.h	/^static inline int nrf_tx_fifo_empty(nrf_t *nic) {$/;"	f
+nrf_tx_fifo_full	demo/nrf-hw-support.h	/^static inline int nrf_tx_fifo_full(nrf_t *nic) {$/;"	f
+nrf_tx_flush	demo/nrf-hw-support.c	/^uint8_t nrf_tx_flush(const nrf_t *n) {$/;"	f
+nrf_tx_intr_clr	demo/nrf-hw-support.h	/^static inline void nrf_tx_intr_clr(nrf_t *nic) {$/;"	f
+nrf_tx_send_ack	demo/nrf-driver.c	/^int nrf_tx_send_ack(nrf_t *n, uint32_t txaddr, $/;"	f
+nrf_tx_send_noack	demo/nrf-driver.c	/^int nrf_tx_send_noack(nrf_t *n, uint32_t txaddr, $/;"	f
+nrf_verbose_p	demo/nrf-hw-support.c	/^unsigned nrf_verbose_p = 0;$/;"	v
+open_conn	libesp/libesp.h	/^    esp_conn_t  open_conn[ESP_MAX_CONN];$/;"	m	struct:esp
+opt_check_p	demo/nrf.h	/^enum { opt_check_p = 1 };$/;"	e	enum:__anon12
+opt_put8_chk	demo/nrf.h	/^#define opt_put8_chk(/;"	d
+our_crc32	libpi/libc/crc.c	/^uint32_t our_crc32(const void *buf, unsigned size) {$/;"	f
+our_crc32_inc	libpi/libc/crc.c	/^uint32_t our_crc32_inc(const void *buf, unsigned size, uint32_t crc) {$/;"	f
+output	libpi/libc/demand.h	/^#define output /;"	d
+overflow	libpi/libc/circular.h	/^    unsigned overflow;$/;"	m	struct:__anon19
+panic	libpi/libc/demand.h	/^#define panic(/;"	d
+parthiv_left	demo/nrf-test.h	/^parthiv_left(uint32_t nbytes, uint32_t ch) {$/;"	f
+parthiv_right	demo/nrf-test.h	/^parthiv_right(uint32_t nbytes, uint32_t ch) {$/;"	f
+password	libesp/libesp.h	/^    const char *password;$/;"	m	struct:esp
+pi_random	libpi/libc/pi-random.c	/^uint32_t pi_random(void) {$/;"	f
+pi_random_init	libpi/libc/pi-random.c	/^uint32_t pi_random_init(void) {$/;"	f
+pi_random_seed	libpi/libc/pi-random.c	/^void pi_random_seed(uint32_t x) {$/;"	f
+pi_roundup	libpi/libc/helper-macros.h	/^#define pi_roundup(/;"	d
+pin_init	demo/nrf-hw-support.c	/^spi_t pin_init(unsigned ce, unsigned spi_chip) {$/;"	f
+pipeid_empty	demo/nrf-hw-support.h	/^static inline int pipeid_empty(unsigned pipeid) {$/;"	f
+pipeid_get	demo/nrf-hw-support.h	/^static inline int pipeid_get(uint8_t status) {$/;"	f
+portn	libesp/libesp.h	/^    unsigned portn;$/;"	m	struct:esp_conn
+pos	libesp/esp-lex-simple.h	/^    unsigned pos;   \/\/ current position in the buffer.$/;"	m	struct:__anon35
+pos	libesp/esp-lex-simple.h	/^    unsigned pos;$/;"	m	struct:__anon36
+powerdown_disable	libpi/src/armv6-debug-impl.h	/^           powerdown_disable:1,$/;"	m	struct:dscr_reg
+prefetch_abort_vector	libpi/staff-src/default-handler-prefetch.c	/^void prefetch_abort_vector(unsigned pc) { INT_UNHANDLED("prefetch abort", pc); }$/;"	f
+prefetch_flush	libpi/include/asm-helpers.h	/^static inline void prefetch_flush(void) {$/;"	f
+prefetch_flush	libpi/include/rpi-asm.h	/^#define prefetch_flush(/;"	d
+prescaler	libpi/include/rpi-armtimer.h	/^              prescaler:2,          \/\/ 2:3 pre-scale bits$/;"	m	struct:__anon27
+pretty_print_usec	libpi/libc/pretty-time.h	/^pretty_print_usec(uint32_t start_usec) {$/;"	f
+pretty_time_mk	libpi/libc/pretty-time.h	/^pretty_time_mk(uint32_t start_usec) {$/;"	f
+pretty_time_print	libpi/libc/pretty-time.h	/^pretty_time_print(pretty_time_t t) {$/;"	f
+pretty_time_t	libpi/libc/pretty-time.h	/^} pretty_time_t;$/;"	t	typeref:struct:__anon20
+print_field	libpi/libc/helper-macros.h	/^#define print_field(/;"	d
+print_random	libpi/libc/random.c	/^static void print_random(struct random_data *r, unsigned n) {$/;"	f	file:
+printk	libpi/libc/circular.h	/^#   define printk /;"	d
+printk	libpi/libc/printk.c	/^int printk(const char *fmt, ...) {$/;"	f
+put32	libpi/staff-start.S	/^put32:$/;"	l
+put32_T	libpi/libc/helper-macros.h	/^#define put32_T(/;"	d
+put8	libpi/staff-src/put-get.S	/^put8:$/;"	l
+putchar	libpi/libc/printk.c	/^#define putchar /;"	d	file:
+putk	libpi/libc/putk.c	/^int putk(const char *p) {$/;"	f
+r	libpi/libc/pi-random.c	/^static struct random_data r;$/;"	v	typeref:struct:random_data	file:
+r_DTR_full	libpi/src/armv6-debug-impl.h	/^           r_DTR_full:1,$/;"	m	struct:dscr_reg
+rand_deg	libpi/libc/random.h	/^    int rand_deg;       \/* Degree of random number generator.  *\/$/;"	m	struct:random_data
+rand_sep	libpi/libc/random.h	/^    int rand_sep;       \/* Distance between front and rear.  *\/$/;"	m	struct:random_data
+rand_type	libpi/libc/random.h	/^    int rand_type;      \/* Type of random number generator.  *\/$/;"	m	struct:random_data
+random_data	libpi/libc/random.h	/^struct random_data$/;"	s
+random_poly_info	libpi/libc/random.c	/^static const struct random_poly_info random_poly_info =$/;"	v	typeref:struct:random_poly_info	file:
+random_poly_info	libpi/libc/random.c	/^struct random_poly_info$/;"	s	file:
+random_r	libpi/libc/random.c	/^int random_r(struct random_data *buf, int32_t *result)$/;"	f
+reboot_callout	libpi/staff-src/default-reboot-callout.c	/^void reboot_callout(void) {} $/;"	f
+reboot_handler	libpi/staff-src/default-reboot-handler.c	/^void reboot_handler(void) { } $/;"	f
+recvq	demo/nrf.h	/^    cq_t     recvq;$/;"	m	struct:nrf
+reset_vector	libpi/staff-src/default-handler-reset.c	/^void reset_vector(unsigned pc) { INT_UNHANDLED("reset", pc); }$/;"	f
+revision	libpi/src/armv6-debug.h	/^    uint32_t    revision:4,     \/\/ 0:3  revision number$/;"	m	struct:debug_id
+rpi_arg_get	libpi/include/rpi-thread.h	/^static inline void *rpi_arg_get(rpi_thread_t *t) {$/;"	f
+rpi_arg_put	libpi/include/rpi-thread.h	/^static inline void rpi_arg_put(rpi_thread_t *t, void *arg) {$/;"	f
+rpi_arm_timer_ctrl_t	libpi/include/rpi-armtimer.h	/^} rpi_arm_timer_ctrl_t;$/;"	t	typeref:struct:__anon27
+rpi_arm_timer_t	libpi/include/rpi-armtimer.h	/^} rpi_arm_timer_t;$/;"	t	typeref:enum:__anon28
+rpi_code_t	libpi/include/rpi-thread.h	/^typedef void (*rpi_code_t)(void *);$/;"	t
+rpi_putchar	libpi/libc/putchar.c	/^rpi_putchar_t rpi_putchar = default_putchar;$/;"	v
+rpi_putchar_set	libpi/libc/putchar.c	/^rpi_putchar_t rpi_putchar_set(rpi_putchar_t putc) {$/;"	f
+rpi_putchar_t	libpi/include/rpi.h	/^typedef int (*rpi_putchar_t)(int chr);$/;"	t
+rpi_putchar_t	libpi/libc/putchar.c	/^typedef int (*rpi_putchar_t)(int chr);$/;"	t	file:
+rpi_reboot	libpi/staff-src/reboot.c	/^void rpi_reboot(void) {$/;"	f
+rpi_set_putc	libpi/include/rpi.h	/^#define rpi_set_putc /;"	d
+rpi_thread	libpi/include/rpi-thread.h	/^typedef struct rpi_thread {$/;"	s
+rpi_thread_t	libpi/include/rpi-thread.h	/^} rpi_thread_t;$/;"	t	typeref:struct:rpi_thread
+rpi_tid	libpi/include/rpi-thread.h	/^static inline unsigned rpi_tid(void) {$/;"	f
+rpi_wait	libpi/staff-src/rpi-wait.c	/^void rpi_wait(void) { }$/;"	f
+rptr	libpi/libc/random.h	/^    int32_t *rptr;      \/* Rear pointer.  *\/$/;"	m	struct:random_data
+rw	libpi/src/armv6-debug-impl.h	/^           rw:1, \/\/ read or write as abort cause. $/;"	m	struct:dfsr_reg
+rx	demo/sw-uart.h	/^    uint8_t tx,rx;$/;"	m	struct:__anon14
+rx	libpi/include/sw-uart.h	/^    uint8_t tx,rx;$/;"	m	struct:__anon23
+rx_config	demo/nrf-driver.c	/^    rx_config = tx_config  | set_bit(PRIM_RX)$/;"	e	enum:__anon1	file:
+rx_pin	demo/at-constants.h	/^  rx_pin = 21,$/;"	e	enum:__anon13
+rx_pin	demo/tests/uart-test-wifi-connect.c	/^  rx_pin = 21,$/;"	e	enum:__anon5	file:
+rx_pin	demo/tests/uart-test.c	/^  rx_pin = 21,$/;"	e	enum:__anon7	file:
+rxaddr	demo/nrf.h	/^    uint32_t rxaddr;$/;"	m	struct:nrf
+s	libpi/src/armv6-debug-impl.h	/^           s:1,  \/\/part of status field. reset val is zero$/;"	m	struct:dfsr_reg
+saved_sp	libpi/include/rpi-thread.h	/^    uint32_t *saved_sp;$/;"	m	struct:rpi_thread
+sd	libpi/src/armv6-debug-impl.h	/^           sd:1, \/\/ AXI Decode or Slave error. SBZ.$/;"	m	struct:dfsr_reg
+sd	libpi/src/armv6-debug-impl.h	/^           sd:1, \/\/ AXI decode or slave error. SBZ.$/;"	m	struct:ifsr_reg
+sec	libpi/libc/pretty-time.h	/^    uint32_t sec;$/;"	m	struct:__anon20
+secure	libpi/src/armv6-debug-impl.h	/^           secure:2, \/\/ 0b00 to match in secure or non-secure$/;"	m	struct:bcr_reg
+secure_match	libpi/src/armv6-debug-impl.h	/^           secure_match:2, \/\/ set to 0b00 to match in secure or non-secure world$/;"	m	struct:wcr_reg
+send_at_cmd	demo/atlib.h	/^int send_at_cmd(at_dev_t a, char* cmd, char* res) {$/;"	f
+send_cmd	demo/tests/uart-test-wifi-connect.c	/^void send_cmd(sw_uart_t uart_esp32, char* c) {$/;"	f
+seps	libpi/libc/random.c	/^    int seps[MAX_TYPES];$/;"	m	struct:random_poly_info	file:
+server_addr	demo/nrf-default-values.h	/^    server_addr = 0xd5d5d5,$/;"	e	enum:__anon15
+server_conf	demo/nrf-test.h	/^server_conf(uint32_t nbytes) {$/;"	f
+server_ip	libesp/libesp.h	/^    const char *server_ip;$/;"	m	struct:esp_conn
+server_mk	demo/nrf-test.h	/^server_mk(uint32_t rxaddr, uint32_t nbytes, int ack_p) {$/;"	f
+server_mk_ack	demo/nrf-test.h	/^server_mk_ack(uint32_t rxaddr, uint32_t nbytes) {$/;"	f
+server_mk_noack	demo/nrf-test.h	/^server_mk_noack(uint32_t rxaddr, uint32_t nbytes) {$/;"	f
+set_all_interrupts_off	libpi/staff-src/interrupts-c.c	/^uint32_t set_all_interrupts_off(void) {$/;"	f
+set_bit	demo/nrf-driver.c	/^#   define set_bit(/;"	d	file:
+set_user_level	libpi/staff-src/reboot.c	/^void set_user_level(void) {$/;"	f
+setstate_r	libpi/libc/random.c	/^int setstate_r (char *arg_state, struct random_data *buf)$/;"	f
+skip_blank_lines	libesp/esp-parse.c	/^static void skip_blank_lines(lex_t *l) {$/;"	f	file:
+skip_blank_space	libesp/esp-parse.c	/^static void skip_blank_space(lex_t *l) {$/;"	f	file:
+snprintf	libesp/pi-support.h	/^#define snprintf /;"	d
+spi	demo/nrf.h	/^    spi_t spi;$/;"	m	struct:nrf
+spi_chip	demo/nrf.h	/^    uint8_t spi_chip,   \/\/ which spi chip are we using.$/;"	m	struct:__anon9
+spi_mk	libpi/include/spi.h	/^spi_mk(unsigned chip_select, unsigned clk_div) {$/;"	f
+spi_print_config	libpi/include/spi.h	/^static inline void spi_print_config(const char *msg, spi_t s) {$/;"	f
+spi_set_ce	libpi/include/spi.h	/^static inline spi_t spi_set_ce(spi_t s, uint8_t ce) $/;"	f
+spi_set_clk	libpi/include/spi.h	/^static inline spi_t spi_set_clk(spi_t s, uint8_t clk) $/;"	f
+spi_set_miso	libpi/include/spi.h	/^static inline spi_t spi_set_miso(spi_t s, uint8_t miso) $/;"	f
+spi_set_mosi	libpi/include/spi.h	/^static inline spi_t spi_set_mosi(spi_t s, uint8_t mosi) $/;"	f
+spi_t	libpi/include/spi.h	/^} spi_t;$/;"	t	typeref:struct:__anon26
+spiden	libpi/src/armv6-debug-impl.h	/^           spiden:1,$/;"	m	struct:dscr_reg
+spniden	libpi/src/armv6-debug-impl.h	/^           spniden:1,$/;"	m	struct:dscr_reg
+spsr_get	libpi/include/cpsr-util.h	/^static inline uint32_t spsr_get(void) {$/;"	f
+spsr_set	libpi/include/cpsr-util.h	/^static inline void spsr_set(uint32_t spsr) {$/;"	f
+srandom_r	libpi/libc/random.c	/^int srandom_r (unsigned int seed, struct random_data *buf) {$/;"	f
+src_loc_mk	libpi/include/src-loc.h	/^src_loc_t src_loc_mk(const char *file, const char *func, unsigned lineno) {$/;"	f
+src_loc_t	libpi/include/src-loc.h	/^} src_loc_t; $/;"	t	typeref:struct:__anon22
+stack	libpi/include/rpi-thread.h	/^	uint32_t stack[THREAD_MAXSTACK];$/;"	m	struct:rpi_thread
+start_usec	demo/nrf.h	/^    uint32_t start_usec,$/;"	m	struct:nrf
+state	libpi/libc/random.h	/^    int32_t *state;     \/* Array of state values.  *\/$/;"	m	struct:random_data
+statebuf	libpi/libc/pi-random.c	/^static char statebuf[STATESIZE];$/;"	v	file:
+status	libpi/src/armv6-debug-impl.h	/^  uint32_t status:4, \/\/ 3-65$/;"	m	struct:dfsr_reg
+status	libpi/src/armv6-debug-impl.h	/^  uint32_t status:4, \/\/ indicates type of fault. 0b0010: instruction debug$/;"	m	struct:ifsr_reg
+sticky_imprecise_data_abort	libpi/src/armv6-debug-impl.h	/^           sticky_imprecise_data_abort:1,$/;"	m	struct:dscr_reg
+sticky_precise_data_abort	libpi/src/armv6-debug-impl.h	/^           sticky_precise_data_abort:1,$/;"	m	struct:dscr_reg
+sticky_undefined	libpi/src/armv6-debug-impl.h	/^           sticky_undefined:1,$/;"	m	struct:dscr_reg
+strcat	libpi/libc/strcat.c	/^char *strcat (char *dest, const char *src) {$/;"	f
+strchr	libpi/libc/strchr.c	/^char *strchr(register const char *s, int c) {$/;"	f
+strcmp	libpi/libc/strcmp.c	/^int strcmp(const char *a, const char *b) {$/;"	f
+strcpy	libpi/libc/strcpy.c	/^char *strcpy(char * s1, const char * s2) {$/;"	f
+stream	libesp/esp-lex-simple.h	/^    uint8_t *stream;$/;"	m	struct:__anon35
+strlen	libpi/libc/strlen.c	/^size_t strlen(const char *p) {$/;"	f
+strncmp	libpi/libc/strncmp.c	/^int strncmp(const char* _s1, const char* _s2, size_t n) {$/;"	f
+supervisor_access	libpi/src/armv6-debug-impl.h	/^           supervisor_access:2, \/\/ 0b11 for user and privileged$/;"	m	struct:wcr_reg
+supervisor_access	libpi/src/armv6-debug-impl.h	/^           supervisor_access:2, \/\/ 0b11 to allow either user or priv$/;"	m	struct:bcr_reg
+sw_spi_mk	libpi/include/spi.h	/^static inline spi_t sw_spi_mk(unsigned chip_select, unsigned clk_div) {$/;"	f
+sw_uart	demo/sw-uart-veneer.c	/^static sw_uart_t sw_uart;$/;"	v	file:
+sw_uart_get8	demo/sw-uart.c	/^int sw_uart_get8(sw_uart_t *uart) {$/;"	f
+sw_uart_init	demo/sw-uart.h	/^#define sw_uart_init(/;"	d
+sw_uart_init	libpi/include/sw-uart.h	/^#define sw_uart_init(/;"	d
+sw_uart_mk_helper	demo/sw-uart.c	/^sw_uart_t sw_uart_mk_helper(unsigned tx, unsigned rx,$/;"	f
+sw_uart_put8	demo/sw-uart.c	/^void sw_uart_put8(sw_uart_t *uart, unsigned char c) {$/;"	f
+sw_uart_putk	demo/sw-uart.c	/^void sw_uart_putk(sw_uart_t *uart, const char *msg) {$/;"	f
+sw_uart_t	demo/sw-uart.h	/^} sw_uart_t;$/;"	t	typeref:struct:__anon14
+sw_uart_t	libpi/include/sw-uart.h	/^} sw_uart_t;$/;"	t	typeref:struct:__anon23
+syscall_vector	libpi/staff-src/default-handler-swi.c	/^void syscall_vector(unsigned pc) { INT_UNHANDLED("swi", pc); }$/;"	f
+tail	libpi/libc/Q.h	/^    E *head, *tail;$/;"	m	struct:Q
+tail	libpi/libc/circular.h	/^    unsigned head, tail;$/;"	m	struct:__anon19
+test_passed	libpi/libc/demand.h	/^#define test_passed(/;"	d
+tid	libpi/include/rpi-thread.h	/^	uint32_t tid;$/;"	m	struct:rpi_thread
+time_last	libpi/include/timeout.h	/^    uint32_t time_last;$/;"	m	struct:__anon29
+time_print	libpi/libc/time-print.h	/^static void time_print(const char *msg, uint32_t start_usec) {$/;"	f
+time_to_msec	libpi/libc/time-print.h	/^static inline unsigned time_to_msec(unsigned tot) {$/;"	f
+time_to_sec	libpi/libc/time-print.h	/^static inline unsigned time_to_sec(unsigned tot) {$/;"	f
+time_to_usec	libpi/libc/time-print.h	/^static inline unsigned time_to_usec(unsigned tot) {$/;"	f
+time_usecs	libpi/include/timeout.h	/^    uint64_t time_usecs;$/;"	m	struct:__anon29
+timed_write	demo/sw-uart.c	/^static inline void timed_write(int pin, int v, unsigned usec) {$/;"	f	file:
+timeout_get_usec	libpi/include/timeout.h	/^static inline uint64_t timeout_get_usec(timeout_t *t) {$/;"	f
+timeout_msec	libpi/include/timeout.h	/^static inline int timeout_msec(timeout_t *t, uint64_t max_msec) {$/;"	f
+timeout_sec	libpi/include/timeout.h	/^static inline int timeout_sec(timeout_t *t, uint64_t max_sec) {$/;"	f
+timeout_start	libpi/include/timeout.h	/^static timeout_t timeout_start(void) {$/;"	f
+timeout_t	libpi/include/timeout.h	/^} timeout_t;$/;"	t	typeref:struct:__anon29
+timeout_usec	libpi/include/timeout.h	/^static inline int timeout_usec(timeout_t *t, uint64_t max_usec) {$/;"	f
+timer_check_offsets	libpi/staff-src/timer-interrupt.c	/^static void timer_check_offsets(void) {$/;"	f	file:
+timer_enabled	libpi/include/rpi-armtimer.h	/^              timer_enabled:1,          \/\/ :7 1 = timer enabled$/;"	m	struct:__anon27
+timer_get_usec	libpi/staff-src/timer.c	/^uint32_t timer_get_usec(void) {$/;"	f
+timer_get_usec_raw	libpi/staff-src/timer.c	/^uint32_t timer_get_usec_raw(void) {$/;"	f
+timer_interrupt_init	libpi/staff-src/timer-interrupt.c	/^void timer_interrupt_init(unsigned ncycles) {$/;"	f
+todo	libpi/libc/demand.h	/^#define todo(/;"	d
+tot_lost	demo/nrf.h	/^             tot_lost,$/;"	m	struct:nrf
+tot_recv_bytes	demo/nrf.h	/^             tot_recv_bytes;$/;"	m	struct:nrf
+tot_recv_msgs	demo/nrf.h	/^             tot_recv_msgs,$/;"	m	struct:nrf
+tot_retrans	demo/nrf.h	/^             tot_retrans,$/;"	m	struct:nrf
+tot_sent_bytes	demo/nrf.h	/^             tot_sent_bytes,$/;"	m	struct:nrf
+tot_sent_msgs	demo/nrf.h	/^             tot_sent_msgs,$/;"	m	struct:nrf
+trace	libpi/libc/demand.h	/^#define trace(/;"	d
+trace_clean_exit	libpi/libc/demand.h	/^#define trace_clean_exit(/;"	d
+trace_notreached	libpi/libc/demand.h	/^#define trace_notreached(/;"	d
+trace_panic	libpi/libc/demand.h	/^#define trace_panic(/;"	d
+tx	demo/sw-uart.h	/^    uint8_t tx,rx;$/;"	m	struct:__anon14
+tx	libpi/include/sw-uart.h	/^    uint8_t tx,rx;$/;"	m	struct:__anon23
+tx_config	demo/nrf-driver.c	/^    tx_config = enable_crc | crc_two_byte | set_bit(PWR_UP) | mask_int,$/;"	e	enum:__anon1	file:
+tx_pin	demo/at-constants.h	/^  tx_pin = 20,$/;"	e	enum:__anon13
+tx_pin	demo/tests/uart-test-wifi-connect.c	/^  tx_pin = 20,$/;"	e	enum:__anon5	file:
+tx_pin	demo/tests/uart-test.c	/^  tx_pin = 20,$/;"	e	enum:__anon7	file:
+type	libesp/libesp.h	/^    enum { ESP_TCP = 13, ESP_UDP } type;$/;"	m	struct:esp_conn	typeref:enum:esp_conn::__anon33
+u	demo/atlib.h	/^  sw_uart_t *u;$/;"	m	struct:__anon17
+u32_to_T	libpi/libc/helper-macros.h	/^#define u32_to_T(/;"	d
+u8_to_T	libpi/libc/helper-macros.h	/^#define u8_to_T(/;"	d
+uart_can_put8	demo/sw-uart-veneer.c	/^int uart_can_put8(void) { return 1; }$/;"	f
+uart_can_put8	libpi/src/uart.c	/^int uart_can_put8(void) {$/;"	f
+uart_destroy	demo/sw-uart-veneer.c	/^void uart_destroy(void) {}$/;"	f
+uart_disable	demo/sw-uart-veneer.c	/^void uart_disable(void) { }$/;"	f
+uart_disable	libpi/src/uart.c	/^void uart_disable(void) {$/;"	f
+uart_flush_tx	demo/sw-uart-veneer.c	/^void uart_flush_tx(void) {}$/;"	f
+uart_flush_tx	libpi/src/uart.c	/^void uart_flush_tx(void) {$/;"	f
+uart_get8	demo/sw-uart-veneer.c	/^int uart_get8(void) { unimplemented(); }$/;"	f
+uart_get8	libpi/src/uart.c	/^int uart_get8(void) {$/;"	f
+uart_get8_async	demo/sw-uart-veneer.c	/^int uart_get8_async(void) { unimplemented(); }$/;"	f
+uart_get8_async	libpi/src/uart.c	/^int uart_get8_async(void) { $/;"	f
+uart_has_data	demo/sw-uart-veneer.c	/^int uart_has_data(void) { unimplemented(); }$/;"	f
+uart_has_data	libpi/src/uart.c	/^int uart_has_data(void) {$/;"	f
+uart_hex	libpi/libc/uart-hex.c	/^int uart_hex(unsigned h) {$/;"	f
+uart_init	demo/sw-uart-veneer.c	/^void uart_init(void) {$/;"	f
+uart_init	libpi/src/uart.c	/^void uart_init(void) {$/;"	f
+uart_put8	demo/sw-uart-veneer.c	/^int uart_put8(uint8_t c) {$/;"	f
+uart_put8	libpi/src/uart.c	/^int uart_put8(uint8_t c) {$/;"	f
+uart_tx_is_empty	libpi/src/uart.c	/^int uart_tx_is_empty(void) {$/;"	f
+uint32_t	libpi/include/rpi-armtimer.h	/^    uint32_t  :1,                       \/\/ :0 not used.  r\/w$/;"	m	struct:__anon27
+undefined_instruction_vector	libpi/staff-src/default-handler-undefined-inst.c	/^void undefined_instruction_vector(unsigned pc) { INT_UNHANDLED("undefined inst", pc); }$/;"	f
+unimplemented	libpi/libc/demand.h	/^#define unimplemented(/;"	d
+unlikely	libpi/include/rpi.h	/^#define unlikely(/;"	d
+use_32bit_counter	libpi/include/rpi-armtimer.h	/^              use_32bit_counter:1,     \/\/ :1 1=use 32-bit counter, 0=16-bit$/;"	m	struct:__anon27
+usec	libpi/libc/pretty-time.h	/^    uint32_t usec;$/;"	m	struct:__anon20
+usec_per_bit	demo/sw-uart.h	/^    uint32_t usec_per_bit;   \/\/ microseconds b\/n each bit.$/;"	m	struct:__anon14
+usec_per_bit	libpi/include/sw-uart.h	/^    uint32_t usec_per_bit;   \/\/ microseconds b\/n each bit.$/;"	m	struct:__anon23
+usec_to_cycles	libpi/include/rpi-constants.h	/^#define usec_to_cycles(/;"	d
+usec_to_msec	libpi/libc/pretty-time.h	/^static inline uint32_t usec_to_msec(uint32_t tot_usec) {$/;"	f
+usec_to_sec	libpi/libc/pretty-time.h	/^static inline uint32_t usec_to_sec(uint32_t tot_usec) {$/;"	f
+usec_to_usec	libpi/libc/pretty-time.h	/^static inline uint32_t usec_to_usec(uint32_t tot_usec) {$/;"	f
+user_level	libpi/staff-src/reboot.c	/^static unsigned user_level = 0b10000;$/;"	v	file:
+usr_mode_comms_access	libpi/src/armv6-debug-impl.h	/^           usr_mode_comms_access:1, \/\/ 0 if enabled, 1 if disabled$/;"	m	struct:dscr_reg
+variant	libpi/src/armv6-debug.h	/^                variant:4,      \/\/ 4:7  major revision number$/;"	m	struct:debug_id
+vector_base_chk	libpi/src/vector-base.h	/^static inline int vector_base_chk(void *vector_base) {$/;"	f
+vector_base_get	libpi/src/vector-base.h	/^static inline void *vector_base_get(void) {$/;"	f
+vector_base_reset	libpi/src/vector-base.h	/^vector_base_reset(void *vec) {$/;"	f
+vector_base_set	libpi/src/vector-base.h	/^static inline void vector_base_set(void *vec) {$/;"	f
+vprintk	libpi/libc/printk.c	/^int vprintk(const char *fmt, va_list ap) {$/;"	f
+w_DTR_full	libpi/src/armv6-debug-impl.h	/^           w_DTR_full:1,$/;"	m	struct:dscr_reg
+wait_for_conn	libesp/esp-commands.c	/^int wait_for_conn(esp_t *e, unsigned *ch) {$/;"	f
+wait_until_cyc	libpi/include/cycle-util.h	/^wait_until_cyc(unsigned pin, unsigned v, unsigned s, unsigned ncycles) {$/;"	f
+wait_until_usec	libpi/include/cycle-util.h	/^static inline int wait_until_usec(int pin, int v, unsigned timeout_usec) {$/;"	f
+was_brkpt_fault	libpi/src/armv6-debug-impl.h	/^static inline int was_brkpt_fault(void) {$/;"	f
+was_watchpt_fault	libpi/src/armv6-debug-impl.h	/^static inline int was_watchpt_fault(void) {$/;"	f
+watchdog_feed	libpi/staff-src/watchdog.c	/^void watchdog_feed(void) {$/;"	f
+watchdog_get_time_left_ms	libpi/staff-src/watchdog.c	/^unsigned watchdog_get_time_left_ms(void) {$/;"	f
+watchdog_get_time_left_sec	libpi/staff-src/watchdog.c	/^unsigned watchdog_get_time_left_sec(void) {$/;"	f
+watchdog_get_time_left_ticks	libpi/staff-src/watchdog.c	/^unsigned watchdog_get_time_left_ticks(void) {$/;"	f
+watchdog_get_time_left_us	libpi/staff-src/watchdog.c	/^unsigned watchdog_get_time_left_us(void) {$/;"	f
+watchdog_is_running	libpi/staff-src/watchdog.c	/^int watchdog_is_running(void) {$/;"	f
+watchdog_reboot	libpi/staff-src/watchdog.c	/^void watchdog_reboot(void) {$/;"	f
+watchdog_resume	libpi/staff-src/watchdog.c	/^void watchdog_resume(void) {$/;"	f
+watchdog_shutdown	libpi/staff-src/watchdog.c	/^void watchdog_shutdown(void) {$/;"	f
+watchdog_start_ms	libpi/staff-src/watchdog.c	/^void watchdog_start_ms(unsigned ms) {$/;"	f
+watchdog_start_sec	libpi/staff-src/watchdog.c	/^void watchdog_start_sec(unsigned sec) {$/;"	f
+watchdog_start_ticks	libpi/staff-src/watchdog.c	/^void watchdog_start_ticks(unsigned ticks) {$/;"	f
+watchdog_start_us	libpi/staff-src/watchdog.c	/^void watchdog_start_us(unsigned us) {$/;"	f
+watchdog_stop	libpi/staff-src/watchdog.c	/^void watchdog_stop(void) {$/;"	f
+watchpoint_enable	libpi/src/armv6-debug-impl.h	/^  uint32_t watchpoint_enable:1,$/;"	m	struct:wcr_reg
+watchpt_fault_addr	libpi/src/armv6-debug-impl.h	/^static inline uint32_t watchpt_fault_addr(void) {$/;"	f
+watchpt_fault_pc	libpi/src/armv6-debug-impl.h	/^static inline uint32_t watchpt_fault_pc(void) {$/;"	f
+wcr_reg	libpi/src/armv6-debug-impl.h	/^struct wcr_reg {$/;"	s
+whole	demo/nrf-hw-support.c	/^    unsigned whole;$/;"	m	struct:__anon18	file:
+wifi	libesp/libesp.h	/^    const char *wifi;$/;"	m	struct:esp
+write_cyc_until	libpi/include/cycle-util.h	/^write_cyc_until(unsigned pin, unsigned v, unsigned start, unsigned ncycles) {$/;"	f
+wrp	libpi/src/armv6-debug.h	/^                wrp:4          \/\/ 28:31 --- number of watchpoint pairs.$/;"	m	struct:debug_id
+zero	libpi/libc/helper-macros.h	/^#define zero(/;"	d
