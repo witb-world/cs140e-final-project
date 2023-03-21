@@ -1,7 +1,10 @@
-esp-commands.o: esp-commands.c libesp.h unix-support.h \
-  /Users/eliw/2_1337/cs140e-22win/libunix/libunix.h \
-  /Users/eliw/2_1337/cs140e-22win/libunix/staff-libunix.h \
-  /Users/eliw/2_1337/cs140e-22win/libunix/demand.h \
-  /Users/eliw/2_1337/cs140e-22win/libunix/bit-support.h \
-  /Users/eliw/2_1337/cs140e-22win/libunix/fast-hash32.h esp-parse.h \
-  esp-lex.h esp-lex-simple.h esp-constants.h esp-commands.h esp-run.h
+../libesp/esp-commands.o: ../libesp/esp-commands.c ../libesp/libesp.h \
+ ../libesp/pi-support.h \
+ /Users/eliw/Documents/Stanford/cs140e/libpi/include/rpi.h \
+ /Users/eliw/Documents/Stanford/cs140e/libpi/libc/demand.h \
+ /Users/eliw/Documents/Stanford/cs140e/libpi/include/gpio.h \
+ /Users/eliw/Documents/Stanford/cs140e/libpi/include/rpi-constants.h \
+ /Users/eliw/Documents/Stanford/cs140e/libpi/include/your-prototypes.h \
+ ../libesp/esp-parse.h ../libesp/esp-lex.h ../libesp/esp-lex-simple.h \
+ /Users/eliw/Documents/Stanford/cs140e/libpi/include/sw-uart.h \
+ ../libesp/esp-constants.h ../libesp/esp-commands.h ../libesp/esp-run.h

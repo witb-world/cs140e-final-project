@@ -123,6 +123,7 @@ int match_literal_string(lex_t *l, char *out, unsigned nbytes) {
         }
     }
     lex_panic(l, "malformed string, exceeded size: <%s>\n", out);
+    return 0;
 }
 
 // panic if <l> does not contain a string as next match

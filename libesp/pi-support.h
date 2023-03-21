@@ -22,5 +22,5 @@ static inline int isprint(int c) {
 // we do not use this currently on the pi, so pass a
 // pointer to an undefined structure
 struct do_not_use;
-typedef struct do_not_use *esp_handle_t;
+typedef int esp_handle_t;
 #endif

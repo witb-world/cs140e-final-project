@@ -7,6 +7,8 @@
 // huge buffer.
 #define LEX_MAXBUF 1024 * 1024
 
+typedef int esp_handle_t;
+
 #include "sw-uart.h"
 typedef struct {
     unsigned pos;   // current position in the buffer.

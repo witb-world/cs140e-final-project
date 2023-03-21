@@ -18,7 +18,7 @@ enum {
 #define UART_CUR "AT+UART_CUR?\r\n"
 #define GET_WIFI_MODE "AT+CWMODE?\r\n"
 #define SET_WIFI_STATION_MODE "AT+CWMODE=1\r\n"
-#define ROUTER_CONNECT "AT+CWJAP=\"<YOUR_SSID>\",\"<YOUR_WIFI_PW>\"\r\n"
+#define ROUTER_CONNECT "AT+CWJAP=\"<YOUR_SSID>\",\"\"\r\n"
 #define GET_IP "AT+CIPSTA?\r\n"
 
 void send_cmd(sw_uart_t uart_esp32, char* c) {
@@ -61,7 +61,7 @@ void notmain(void) {
   send_cmd(u, cmd2);
   char* cmd3 = ROUTER_CONNECT;
   char* cmd4 = GET_IP;
-  send_cmd(u, cmd3);
+  // send_cmd(u, cmd3);
   delay_us(1000 * 1000);
   send_cmd(u, cmd4);
   // reboot / clean up
