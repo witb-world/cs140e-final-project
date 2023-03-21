@@ -112,6 +112,13 @@ int at_drain(esp_t *e) {
     return 1;
 }
 
+/*
+ * Provide external interface to drain
+ */
+int esp_drain(esp_t *e) {
+  return at_drain(e);
+}
+
 
 // esp has various race conditions: we use delays to try to 
 // allow it to finish what it is doing.

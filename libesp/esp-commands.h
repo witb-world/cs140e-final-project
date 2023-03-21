@@ -19,6 +19,7 @@ int esp_hard_reset(esp_t *e);
 
 int esp_send(esp_t *e, unsigned ch, const void *data, unsigned n);
 
+int esp_drain(esp_t *e);
 int esp_connect(esp_t *e);
 
 int wait_for_conn(esp_t *e, unsigned *ch);

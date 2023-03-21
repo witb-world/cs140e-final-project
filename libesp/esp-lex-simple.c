@@ -41,3 +41,11 @@ void lex_init_simple(lex_t *l, esp_handle_t h) {
 
     l->h = h;
 }
+
+
+void lex_init_uart(lex_t *l, sw_uart_t *u) {
+  memset(l, 0, sizeof *l);
+  l->stream = malloc(LEX_MAXBUF);
+  assert(l->stream);
+  l->u = u;
+}

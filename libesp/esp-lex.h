@@ -10,6 +10,7 @@
 
 // #   define USE_IMPL LEX_CIRC
 // #   define USE_LEX_SIMPLE
+typedef int esp_handle_t;
 
 #if LEX_IMPL == LEX_CIRC
 #   include "esp-lex-circ.h"
@@ -22,6 +23,7 @@
 // initialize lexer --- client has to allocate.
 void lex_init(lex_t *l, esp_handle_t h);
 
+void lex_init_uart(lex_t *l, sw_uart_t *u);
 // read in more data.
 int lex_readin(lex_t *l);
 
@@ -39,7 +41,7 @@ void lex_dump_str(lex_t *s);
 
 #define lex_panic(_l, msg...) do {      \
     lex_dump(_l);                       \
-    panic(msg);                         \
+    debug(msg);;                         \
 } while(0)
 
 // should maybe have levels.

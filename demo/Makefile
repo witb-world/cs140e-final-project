@@ -1,5 +1,5 @@
-PROGS := $(wildcard tests/uart-test-lib.c)
-#PROGS := $(wildcard tests/uart-test*.c)
+# PROGS := $(wildcard tests/uart-test-lib.c)
+PROGS := $(wildcard tests/uart-test*.c)
 
 LIBESP_PATH=../libesp
 LIB_ESP=$(LIBESP_PATH)/libesp-pi.a
@@ -10,7 +10,6 @@ CFLAGS = -I$(LIBESP_PATH) -DRPI_OS
 
 # DEPS += $(LIB_ESP)
 
-
 # COMMON_SRC := esp-helpers.c 
 # COMMON_SRC += ../libesp/esp-parse.c  
 # COMMON_SRC += sw-uart.c sw-uart-veneer.c
@@ -19,7 +18,12 @@ CFLAGS = -I$(LIBESP_PATH) -DRPI_OS
 STAFF_OBJS += $(CS140E_2023_PATH)/libpi/staff-objs/sw-uart.o
 # STAFF_OBJS += staff-nrf-driver.o
 
-# COMMON_SRC += $(LIB_ESP)/
+COMMON_SRC += $(LIBESP_PATH)/esp-commands.c 
+COMMON_SRC += $(LIBESP_PATH)/esp-lex.c 
+COMMON_SRC += $(LIBESP_PATH)/esp-run.c 
+COMMON_SRC += $(LIBESP_PATH)/esp-lex-simple.c 
+COMMON_SRC += $(LIBESP_PATH)/esp-parse.c 
+COMMON_SRC += $(LIBESP_PATH)/pi-support.c 
 
 # uncomment if you want it to automatically run.
 RUN=1
