@@ -96,7 +96,7 @@ static int handle_ooo_client(esp_t *e) {
 
 // is it up at all?  
 int esp_is_up(esp_t *e) {
-    at_cmd(e, "AT", "OK");
+    at_cmd_extra(e, "AT", "OK");
     return 1;
 }
 

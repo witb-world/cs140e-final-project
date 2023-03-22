@@ -3,6 +3,7 @@
 #include "esp-lex-simple.h"
 #include "libesp.h"
 #include "esp-commands.h"
+#include <stdlib.h>
 
 #define BUF_SIZE 1024 
 
@@ -26,9 +27,11 @@ void notmain(void) {
   // esp_drain(&e);
 //  esp_hard_reset(&e);
 
+  debug("Checking if ESP is up\n");
   esp_is_up(&e);
+  dev_barrier();
+  debug("ESP is up! getting version info...\n");
   at_cmd(&e, "AT+GMR", "OK");
   clean_reboot();
-
 }
   // printk("Hello, world!\n");
