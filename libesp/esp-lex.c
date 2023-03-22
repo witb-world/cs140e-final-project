@@ -18,9 +18,9 @@ int lex_readin(lex_t *l) {
     assert(lex_nstream(l) == 0);
 
     // i think to get around hold and wait, have to allow timeout.
-    for(int i = 0; !esp_has_data_timeout(l, 1000*10); i++)  {
-        if(i % 100  == 0)
-            output("%d: waiting on input from esp\n", i);
+    for(int i = 0; !esp_has_data_timeout(l, 1*10); i++)  {
+        // if(i % 100  == 0)
+        //     output("%d: waiting on input from esp\n", i);
     }
 
     unsigned nbytes = 0; 
