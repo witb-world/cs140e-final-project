@@ -15,7 +15,7 @@ $(SUBDIRS): force
 	$(MAKE)  -f $@ $(TARGET)
 
 clean:
-	rm -f *~ *.bak tags ./unix-example
+	rm -f *~ *.bak *.d tags ./unix-example
 
 .PHONY: force
 	force :;
