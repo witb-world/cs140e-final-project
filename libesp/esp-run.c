@@ -222,7 +222,7 @@ int cmd_ack(esp_t *e, const char *cmd, int extra_p) {
         if(match_blank_line(e->l))
             continue;
         if(match_busy(e->l)) {
-            debug("received a busy while waitin for ack of <%s>\n", cmd);
+            debug("received a busy while waiting for ack of <%s>\n", cmd);
             esp_usleep(20*1000);
             continue;
         }

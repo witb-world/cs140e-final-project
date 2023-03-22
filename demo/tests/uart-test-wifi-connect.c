@@ -17,7 +17,7 @@ enum {
 #define AT_GMR  "AT+GMR\r\n"
 #define UART_CUR "AT+UART_CUR?\r\n"
 #define GET_WIFI_MODE "AT+CWMODE?\r\n"
-#define SET_WIFI_STATION_MODE "AT+CWMODE=1\r\n"
+#define SET_WIFI_STATION_MODE "AT+CWMODE=0\r\n"
 #define ROUTER_CONNECT "AT+CWJAP=\"<YOUR_SSID>\",\"\"\r\n"
 #define GET_IP "AT+CIPSTA?\r\n"
 
