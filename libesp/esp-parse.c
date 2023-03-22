@@ -246,8 +246,8 @@ int match_linev(lex_t *l, const char *fmt, va_list args) {
 
     // we expect an EOL: maybe should change so doesn't die, like the
     // other matches.
-    // if(!match_eol(l))
-    //     lex_panic(l, "did not match end of line\n");
+     if(!match_eol(l))
+         lex_panic(l, "did not match end of line\n");
     return res;
 }
 

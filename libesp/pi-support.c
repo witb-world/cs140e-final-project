@@ -13,6 +13,8 @@
 // called when the lex buffer has no characters.  reads in more from the esp.
 int esp_read(lex_t *l, void *buf, unsigned maxbytes, unsigned usec) {
 //  debug("Attempting to read from GPIO %d\n", l->u->rx);
+  if(!esp_has_data_timeout(l, usec))
+    return 0;
   int result = sw_uart_read_timeout(l->u, buf, maxbytes, usec);
   int n_bytes_read = 1024;//strlen(buf);
   if (result > 0) 

@@ -26,10 +26,12 @@ void notmain(void) {
 
   // esp_drain(&e);
 //  esp_hard_reset(&e);
-
+//
+  dev_barrier();
   debug("Checking if ESP is up\n");
   esp_is_up(&e);
   dev_barrier();
+  delay_us(500);
   debug("ESP is up! getting version info...\n");
   at_cmd(&e, "AT+GMR", "OK");
   clean_reboot();

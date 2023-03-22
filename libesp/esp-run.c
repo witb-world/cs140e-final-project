@@ -235,8 +235,11 @@ int cmd_ack(esp_t *e, const char *cmd, int extra_p) {
 
 static int do_at_cmd(esp_t *e, const char *cmd, const char *response, int extra_p) {
     cmd_puts(e, cmd);
+    // delay_us(750);
+    dev_barrier();
     if(!cmd_ack(e, cmd, extra_p))
         panic("error issuing cmd <%s>!\n", cmd);
+    dev_barrier();
     // cannot fail, no extra stuff.
     return cmd_response(e, response, 0, extra_p);
 }
