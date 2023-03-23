@@ -9,7 +9,7 @@ tests starting in "uart-test" will start running automatically.
 To test router connection, note that you'll have to update the constants to include your SSID and router password.
 
 # TODO
-- [ ] implement sw-uart (currently using staff version)
+- [x] implement sw-uart (currently using staff version)
 - [x] create wrapper code for AT commands (eg, getters and setters, formatting including CRLF)
     - [x] port over code from 140E 2022 lab 16
     - [x] adapt 140E 2022 lab 16 code to use pi sw-uart interface instead of unix file descriptors
