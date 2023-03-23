@@ -1,6 +1,6 @@
 # PROGS := $(wildcard tests/uart-test-lib.c)
-PROGS := $(wildcard tests/uart-test-wifi*.c)
-PROGS := $(wildcard tests/uart-test*.c)
+PROGS := $(wildcard tests/uart-test-wifi.c)
+PROGS := $(wildcard tests/uart-test-wifi-connect-to-ap.c)
 
 LIBESP_PATH=../libesp
 LIB_ESP=$(LIBESP_PATH)/libesp-pi.a

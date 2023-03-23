@@ -2,7 +2,7 @@
 #include <stdarg.h>
 #include "libesp.h"
 
-#define DELAY 175 
+#define DELAY 1000 
 
 // if you want to print more, set to != 0.
 unsigned esp_verbose_p = 1;
@@ -247,8 +247,8 @@ static int do_at_cmd(esp_t *e, const char *cmd, const char *response, int extra_
     if(!cmd_ack(e, cmd, extra_p))
         panic("error issuing cmd <%s>!\n", cmd);
     // dev_barrier();
-    // cannot fail, no extra stuff.
-    return cmd_response(e, response, 0, extra_p);
+    // set third arg to 1 to allow failure -EW
+    return cmd_response(e, response, 1, extra_p);
 }
 
 int at_cmd(esp_t *e, const char *cmd, const char *response) {

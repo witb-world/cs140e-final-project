@@ -34,6 +34,8 @@ void notmain(void) {
   delay_us(500);
   debug("ESP is up! getting IP info...\n");
   at_cmd_extra(&e, "AT+CIPSTA?", "OK");
+  delay_us(10000 * 1000);
+  esp_setup_wifi(&e);
   clean_reboot();
 }
   // printk("Hello, world!\n");

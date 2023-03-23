@@ -169,7 +169,9 @@ int esp_setup_wifi(esp_t *e) {
     assert(strlen(e->password) >= 8);
 
     return 
-           at_cmdv(e, "AT+CWSAP=\"%s\",\"%s\",5,3", e->wifi, e->password)
+      // removing call to at_cmdv whille porting over strlib
+           //at_cmdv(e, "AT+CWSAP=\"%s\",\"%s\",5,3", e->wifi, e->password)
+        at_cmd(e, "AT_CWSAP=\"abcdefgh\",\"12345678\",5,3", "OK")
         && at_cmd(e, "AT+CWMODE=3", "OK")
         && at_cmd_extra(e, "AT+CIFSR", "OK")
         ;
