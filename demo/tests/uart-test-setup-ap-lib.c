@@ -32,7 +32,7 @@ void send_cmd(sw_uart_t uart_esp32, char *c)
     memset(resp, 0, BUF_SIZE);
 
     sw_uart_putk(&uart_esp32, c);
-    int result = sw_uart_read_timeout(&uart_esp32, resp, BUF_SIZE, 1000);
+    int result = sw_uart_read_timeout(&uart_esp32, resp, BUF_SIZE, 10000);
 
     if (result == 0)
     {
@@ -40,7 +40,7 @@ void send_cmd(sw_uart_t uart_esp32, char *c)
     }
     else
     {
-        printk("Got response: ");
+        printk("Got response of size %d: ", result);
         for (int i = 0; i < BUF_SIZE; i++)
         {
             printk("%c", resp[i]);
@@ -60,8 +60,8 @@ void notmain(void)
     esp_setup_ap(&esp_server);
 
     // send "AT"
-    // char *cmd = AT;
-    // send_cmd(u, cmd);
+    char *cmd = AT;
+    send_cmd(*(esp_server.l->u), cmd);
     // char *cmd2 = SET_WIFI_STATION_MODE;
     // send_cmd(u, cmd2);
     // delay_us(750);
