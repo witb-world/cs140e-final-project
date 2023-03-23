@@ -8,7 +8,7 @@ enum {
   baud = 115200
 };
 
-#define  AT  "AT",
+#define  AT  "AT"
 #define  AT_GMR  "AT+GMR"
 #define UART_CUR "AT+UART_CUR?"
 #define GET_WIFI_MODE "AT+CWMODE?"
@@ -24,7 +24,7 @@ void notmain(void) {
   sw_uart_t uart_esp32 = sw_uart_init(tx_pin, rx_pin, baud);
 
   // send "AT"
-  char* cmd = AT_GMR;
+  char* cmd = AT;
   strcat(cmd, "\r\n");
   printk("Sending %s to ESP32.\n", cmd);
   sw_uart_putk(&uart_esp32, cmd);

@@ -2,6 +2,8 @@
 #include <stdarg.h>
 #include "libesp.h"
 
+#define DELAY 175 
+
 // if you want to print more, set to != 0.
 unsigned esp_verbose_p = 1;
 void esp_set_verbose(int verbose_p) {
@@ -48,7 +50,7 @@ void cmd_puts(esp_t *e, const char *cmd_op) {
     assert(n < sizeof cmd - 2);
 
     strcpy(cmd, cmd_op);
-    esp_debug("%d: issuing exp-cmd <%s>\n", cmd_num, cmd);
+    // esp_debug("%d: issuing exp-cmd <%s>\n", cmd_num, cmd);
     strcat(cmd, "\r\n");
     cmd_num++;
 
@@ -107,7 +109,7 @@ int cmd_responsev(esp_t *e, int can_fail_p, int extra_p, const char *fmt, va_lis
         if(match_line(l, "busy s...") || match_line(l, "busy p...")) {
             esp_debug("received a busy: sent too much I think (or too soon?)\n");
             esp_debug("waiting for: <%s>\n", fmt);
-            esp_usleep(20 * 1000);
+            esp_usleep(20 * DELAY);
             continue;
         }
 
@@ -142,6 +144,9 @@ static int match_busy(lex_t *l) {
     return match_line(l, "busy s...") || match_line(l, "busy p..."); 
 }
 
+static int match_error(lex_t *l) {
+  return match_line(l, "ERROR") || match_line(l, "error");
+}
 
 int cmd_response(esp_t *e, const char *end, int can_fail_p, int extra_p) {
     lex_t *l = e->l;
@@ -183,7 +188,7 @@ int cmd_response(esp_t *e, const char *end, int can_fail_p, int extra_p) {
 
         if(match_busy(l)) {
             esp_debug("received busy while waiting for: <%s>\n", end);
-            esp_usleep(20 * 1000);
+            esp_usleep(20 * DELAY);
             continue;
         }
 
@@ -223,8 +228,11 @@ int cmd_ack(esp_t *e, const char *cmd, int extra_p) {
             continue;
         if(match_busy(e->l)) {
             debug("received a busy while waiting for ack of <%s>\n", cmd);
-            esp_usleep(20*1000);
+            esp_usleep(20*DELAY);
             continue;
+        }
+        if (match_error(e->l)) {
+          panic("ESP32 device returned an error on cmd <%s>\n", cmd);
         }
         // cmd_reject_line(e,"did not match <%s>:%d, going to do another message\n", cmd, cmd_num);
         e->handle_ooo_msg(e);
@@ -235,8 +243,10 @@ int cmd_ack(esp_t *e, const char *cmd, int extra_p) {
 
 static int do_at_cmd(esp_t *e, const char *cmd, const char *response, int extra_p) {
     cmd_puts(e, cmd);
+    // dev_barrier();
     if(!cmd_ack(e, cmd, extra_p))
         panic("error issuing cmd <%s>!\n", cmd);
+    // dev_barrier();
     // cannot fail, no extra stuff.
     return cmd_response(e, response, 0, extra_p);
 }
@@ -259,7 +269,7 @@ int at_cmd_extra(int fd, const char *at_cmd, const char *response) {
 // think we need to sit here in a tight loop issuing resets until things work ok.
 // XXX: revisit.
 void esp_eat_stale_data(lex_t *l) {
-    while(esp_has_data_timeout(l,1000))
+    while(esp_has_data_timeout(l,DELAY))
         lex_getc(l);
     debug("drained everything i think\n");
 }
