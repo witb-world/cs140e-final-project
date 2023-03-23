@@ -28,12 +28,12 @@ void notmain(void) {
 //  esp_hard_reset(&e);
 //
   dev_barrier();
-  debug("Checking if ESP is up\n");
-  esp_is_up(&e);
+  // debug("Checking if ESP is up\n");
+  // esp_is_up(&e);
   dev_barrier();
   delay_us(500);
-  debug("ESP is up! getting version info...\n");
-  at_cmd(&e, "AT+GMR", "OK");
+  debug("ESP is up! getting uart info...\n");
+  at_cmd(&e, "AT+UART_CUR?", "OK");
   clean_reboot();
 }
   // printk("Hello, world!\n");
