@@ -27,7 +27,7 @@ enum {
 // creating the server/client relationship with the feathers and not the computers (make feather be a server)
 
 char* send_cmd(sw_uart_t uart_esp32, char* c) {
-  printk("Sending %s to ESP32.\n", c);
+  // printk("Sending %s to ESP32.\n", c);
 
   char* resp = kmalloc(BUF_SIZE);
   memset(resp, 0, BUF_SIZE);
@@ -39,11 +39,11 @@ char* send_cmd(sw_uart_t uart_esp32, char* c) {
     printk("No response over UART\n");
   }
   else {
-    printk("Got response of size %d: ", result);
-    for (int i = 0; i < BUF_SIZE; i++) {
-      printk("%c", resp[i]);
-    }
-    printk("\n");
+    // printk("Got response of size %d: ", result);
+    // for (int i = 0; i < BUF_SIZE; i++) {
+    //   printk("%c", resp[i]);
+    // }
+    // printk("\n");
   }
   return resp;
 }
@@ -86,15 +86,23 @@ void ESP32_as_TCP_server_multiple_connections(sw_uart_t server_u, sw_uart_t clie
   send_cmd(server_u, "AT+CIPCLOSE=0\r\n"); // close the TCP connection.
 }
 
+void do_blink(uint32_t gpio_pin){
+  gpio_set_output(gpio_pin);
+  delay_us(10000);
+  printk("Will start blinking!\n");
+  for (int i = 0; i < 10; i++) {
+    gpio_set_on(gpio_pin);
+    delay_ms(500);
+    gpio_set_off(gpio_pin);
+    delay_ms(500);
+  }
+}
+
 void notmain(void) {
   // init uart
   // RX on pin 21
   // TX on pin 20
   // baud rate: default (flashed to 115200)
-<<<<<<< HEAD
-  #if 1
-=======
->>>>>>> 09ee68e3f0a588cb2d50aed965773b4644015326
   sw_uart_t server_u = sw_uart_init(tx_pin, rx_pin, baud);
 
 
@@ -121,30 +129,34 @@ void notmain(void) {
   // send_cmd(server_u, "AT+CIPSEND=0,21\r\n");
   // send_cmd(server_u, "Will begin listening!\r\n");
   delay_us(10000000);
-
+  dev_barrier();
+  printk("Ready to receive commands!\n");
+  dev_barrier();
   while (1) {
-    char* temp = send_cmd(server_u, "AT+CIPRECVLEN?\r\n") + 26;
-    if (temp[0] != ',') {  // received data from connection link 0
+    char* temp = send_cmd(server_u, "AT+CIPRECVLEN?\r\n") + 28;
+    // printk("temp: %c\n", *temp);
+    if (temp[0] != '-' || temp[0] != '0') {  // received data from connection link 0
       char* data = send_cmd(server_u, "AT+CIPRECVDATA=0,1024\r\n");  // data from connection link 0
-      data += 35;
+      data += 38;
       int end_of_command = strlen(data);
-      data[end_of_command - 18] = 0;  // data now contains what connection link 0 sent
+      data[end_of_command - 25] = 0;  // data now contains what connection link 0 sent
 
-      if (!strcmp(data, "blink")) {  // if the blink command is sent
+      if (!strncmp(data, "blink19", 7)) {  // if the blink command is sent
         dev_barrier();
-        gpio_set_output(19);
-        delay_us(10000);
-        printk("Will start blinking!");
-        for (int i = 0; i < 100; i++) {
-          gpio_set_on(19);
-          delay_ms(1000);
-          gpio_set_off(19);
-          delay_ms(1000);
-        }
+        do_blink(19);
         dev_barrier();
-      } else if (!strcmp(data, "kill")) {  // client kills server
+
+      }
+      else if (!strncmp(data, "blink22", 7)){
+        dev_barrier();
+        do_blink(22);
+        dev_barrier();
+      }
+    else if (!strncmp(data, "kill", 4)) {  // client kills server
+                                               //
         break;
       } else {  // otherwise continue
+       // printk("Data: %s\t%d\n", data, strlen(data));
         continue;
       }
     }
