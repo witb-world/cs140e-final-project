@@ -37,6 +37,7 @@ void esp_setup_ap(esp_t *e)
     memcpy(buf + 13 + strlen(e->wifi) + strlen(e->password), "\",5,3\r\n", 7);
 
     lib_send_cmd(e->l->u, buf);
+    delay_ms(100);
     // send_cmdf(e, "AT+CWSAP=\"%s\",\"%s\",5,3\r\n", e->wifi, e->password);
     // return
     //     // removing call to at_cmdv whille porting over strlib

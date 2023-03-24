@@ -55,7 +55,7 @@ void notmain(void)
     // RX on pin 21
     // TX on pin 20
     // baud rate: default (flashed to 115200)
-    esp_t esp_server = esp_init(tx_pin, rx_pin, baud, "ESP32_AP", "passnerd");
+    esp_t esp_server = esp_init(tx_pin, rx_pin, baud, "ESP32_AP_KC", "passnerd");
     printk("esp uart: %d\n", esp_server.l->u->tx);
     esp_setup_ap(&esp_server);
 
