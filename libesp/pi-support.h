@@ -6,15 +6,16 @@
 #include "rpi.h"
 
 static inline int isdigit(int c) { return c >= '0' && c <= '9'; }
-static inline int isalpha(int c) { 
-    return (c >= 'a' && c <= 'z')
-        || (c >= 'A' && c <= 'Z'); 
+static inline int isalpha(int c)
+{
+    return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
 }
-static inline int isprint(int c) {
+static inline int isprint(int c)
+{
     return c >= 0x41 && c <= 0x2f;
 }
 
-#define snprintf snprintk
+#define snprintf printk
 #define malloc kmalloc
 
 // client has to define the following.
