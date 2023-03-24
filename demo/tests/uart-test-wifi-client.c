@@ -18,7 +18,7 @@ enum {
 #define UART_CUR "AT+UART_CUR?\r\n"
 #define GET_WIFI_MODE "AT+CWMODE?\r\n"
 #define SET_WIFI_STATION_MODE "AT+CWMODE=1\r\n"
-#define ROUTER_CONNECT "AT+CWJAP=\"Stanford\",\"\"\r\n" // "AT+CWJAP=\"ESP32_softAP\",\"passnerd\"\r\n" 
+#define ROUTER_CONNECT "AT+CWJAP=\"ESP32_softAP_Isaac\",\"passnerd\"\r\n" // "AT+CWJAP=\"ESP32_softAP\",\"passnerd\"\r\n" 
 #define GET_IP "AT+CIPSTA?\r\n"
 #define GET_UART "AT+UART_CUR?\r\n"
 #define SET_UART "AT+UART_CUR=115200,8,1,0,0\r\n"
@@ -91,9 +91,9 @@ void notmain(void) {
   // RX on pin 21
   // TX on pin 20
   // baud rate: default (flashed to 115200)
-  #if 1
-  sw_uart_t server_u = sw_uart_init(tx_pin, rx_pin, baud);
+  sw_uart_t client_u = sw_uart_init(tx_pin, rx_pin, baud);
 
+  #if 0
 
   send_cmd(server_u, "AT+CWMODE=2\r\n");  // Wifi mode to softAP
   send_cmd(server_u, "AT+CIPMUX=1\r\n"); // enable multiple connections
@@ -129,25 +129,9 @@ void notmain(void) {
   // dev_barrier();
   dev_barrier();
   #endif
-  // char* data = "blink";
-  if (!strcmp(data, "blink")) {
-    gpio_set_output(22);
-    delay_us(10000);
-    printk("Will start blinking!");
-    for (int i = 0; i < 100; i++) {
-      gpio_set_on(22);
-      delay_ms(1000);
-      gpio_set_off(22);
-      delay_ms(1000);
-    }
-  }
-  // dev_barrier();
-  // delay_us(10000000);
-  // send_cmd(server_u, "AT+CIPCLOSE=0\r\n"); // close the TCP connection.
-
 
   // sw_uart_t client_u = sw_uart_init(15, 16, baud); 
   // ESP32_as_TCP_server_multiple_connections(server_u, client_u);
-  // connect_over_TCP_test(u);
+  connect_over_TCP_test(client_u);
   clean_reboot();
 }
