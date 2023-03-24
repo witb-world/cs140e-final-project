@@ -1,8 +1,10 @@
 # PROGS := $(wildcard tests/uart-test-lib.c)
 PROGS := $(wildcard tests/uart-test-wifi.c)
 PROGS := $(wildcard tests/uart-test-wifi-connect-to-ap.c)
+PROGS := $(wildcard tests/uart-test-setup-ap-lib.c)
 
 LIBESP_PATH=../libesp
+LIBC_PATH=../libpi/libc
 LIB_ESP=$(LIBESP_PATH)/libesp-pi.a
 
 CFLAGS = -I$(LIBESP_PATH) -DRPI_OS
@@ -11,20 +13,22 @@ CFLAGS = -I$(LIBESP_PATH) -DRPI_OS
 
 # DEPS += $(LIB_ESP)
 
-# COMMON_SRC := esp-helpers.c 
-# COMMON_SRC += ../libesp/esp-parse.c  
+# COMMON_SRC := esp-helpers.c
+# COMMON_SRC += ../libesp/esp-parse.c
 # COMMON_SRC += sw-uart.c sw-uart-veneer.c
 
-# STAFF_OBJS += $(CS140E_2023_PATH)/libpi/staff-objs/new-spi.o 
+# STAFF_OBJS += $(CS140E_2023_PATH)/libpi/staff-objs/new-spi.o
 STAFF_OBJS += $(CS140E_2023_PATH)/libpi/staff-objs/sw-uart.o
 # STAFF_OBJS += staff-nrf-driver.o
 
-COMMON_SRC += $(LIBESP_PATH)/esp-commands.c 
-COMMON_SRC += $(LIBESP_PATH)/esp-lex.c 
-COMMON_SRC += $(LIBESP_PATH)/esp-run.c 
-COMMON_SRC += $(LIBESP_PATH)/esp-lex-simple.c 
-COMMON_SRC += $(LIBESP_PATH)/esp-parse.c 
-COMMON_SRC += $(LIBESP_PATH)/pi-support.c 
+COMMON_SRC += $(LIBESP_PATH)/esp-commands.c
+COMMON_SRC += $(LIBESP_PATH)/esp-lex.c
+COMMON_SRC += $(LIBESP_PATH)/esp-run.c
+COMMON_SRC += $(LIBESP_PATH)/esp-lex-simple.c
+COMMON_SRC += $(LIBESP_PATH)/esp-parse.c
+COMMON_SRC += $(LIBESP_PATH)/pi-support.c
+# COMMON_SRC += $(LIBC_PATH)/snprintk.c
+# COMMON_SRC += $(LIBC_PATH)/va-printk.c
 
 # uncomment if you want it to automatically run.
 RUN=1
