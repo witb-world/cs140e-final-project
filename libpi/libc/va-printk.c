@@ -31,8 +31,8 @@ int (*rpi_putchar)(int c) = internal_putchar;
 void rpi_set_output(int (*putc_fp)(int), int (*puts_fp)(const char *)) {
     assert(putc_fp);
     rpi_putchar = putc_fp;
-    if(puts_fp)
-        putk = puts_fp;
+    // if(puts_fp)
+    //     putk = puts_fp;
 }
 
 // XXX: check sign promotion.

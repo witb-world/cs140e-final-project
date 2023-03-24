@@ -14,7 +14,7 @@ static inline int isprint(int c) {
     return c >= 0x41 && c <= 0x2f;
 }
 
-#define snprintf snprintk
+#define snprintf printk
 #define malloc kmalloc
 
 // client has to define the following.
