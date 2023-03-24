@@ -91,7 +91,6 @@ void notmain(void) {
   // RX on pin 21
   // TX on pin 20
   // baud rate: default (flashed to 115200)
-  #if 0
   sw_uart_t server_u = sw_uart_init(tx_pin, rx_pin, baud);
 
 
@@ -104,7 +103,7 @@ void notmain(void) {
 
   // ensure PC is connected to ESP32_softAP
   dev_barrier();
-  printk("Connect the PC to ESP32_softAP (10 sec to do so)\n");  // unsure if these lines are needed
+  printk("Connect to server now.\n");  // unsure if these lines are needed
   delay_us(10000000);
   dev_barrier();
 
@@ -115,35 +114,31 @@ void notmain(void) {
   send_cmd(server_u, "This is server to client message!\r\n");  // the 4 bytes are " test"
   delay_us(10000000);
   send_cmd(server_u, "AT+CIPRECVMODE=1\r\n");
-  dev_barrier();
-  printk("Send data now?\r\n");
+  send_cmd(server_u, "AT+CIPSEND=0,42\r\n");
+  send_cmd(server_u, "You now have 10 seconds to send data over!\r\n");
   delay_us(10000000);
-  dev_barrier();
-  char* data = send_cmd(server_u, "AT+CIPRECVDATA=0,5\r\n");
+
+  char* data = send_cmd(server_u, "AT+CIPRECVDATA=0,100\r\n");
   data += 35;
-  data[5] = 0;
-  // dev_barrier();
-  // printk("DATA RECEIVED:\n");
-  // printk(data);
-  // printk("\n");
-  // dev_barrier();
+  int end_of_command = strlen(data);
+  data[end_of_command - 18] = 0;
+
   dev_barrier();
-  #endif
   char* data = "blink";
   if (!strcmp(data, "blink")) {
-    gpio_set_output(22);
+    gpio_set_output(19);
     delay_us(10000);
     printk("Will start blinking!");
     for (int i = 0; i < 100; i++) {
-      gpio_set_on(22);
+      gpio_set_on(19);
       delay_ms(1000);
-      gpio_set_off(22);
+      gpio_set_off(19);
       delay_ms(1000);
     }
   }
-  // dev_barrier();
-  // delay_us(10000000);
-  // send_cmd(server_u, "AT+CIPCLOSE=0\r\n"); // close the TCP connection.
+  dev_barrier();
+  delay_us(10000000);
+  send_cmd(server_u, "AT+CIPCLOSE=0\r\n"); // close the TCP connection.
 
 
   // sw_uart_t client_u = sw_uart_init(15, 16, baud); 
